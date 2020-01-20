@@ -4,6 +4,6 @@
   Portfolio site
 </h1>
 
-## 🚀 Quick start
+## 🚀 About
 
 This is a portfolio site that contains my skills, experience and knowledge.
