@@ -2,15 +2,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: repeating-linear-gradient(
-    45deg,
-    #222,
-    #222 5px,
-    #333 25px,
-    #333 5px
-  );
   overflow: hidden;
   height: 100vh;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  animation-name: lightToDark;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes lightToDark {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 }
 
 .tiltContainer {
@@ -21,6 +39,7 @@
   align-items: center;
   transform-style: preserve-3d;
   /* box-shadow: 0 1px 0px black inset, 0 0 1px 0px black; */
+  z-index: 3;
 }
 
 .introContainer {
@@ -29,66 +48,54 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateZ(80px);
+  transform: translateZ(120px);
 }
 
-.firstHeading {
-  font-family: "Alata";
-  font-size: 4rem;
-  margin: 0;
-  animation-name: slideInFromLeft;
-  animation-duration: 1.5s;
-  align-self: center;
-  color: white;
-}
-
-.name {
-  color: rgb(38, 185, 136);
-}
-
-.secondHeading {
-  font-family: "Alata";
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 20px;
-  animation-name: slideInFromLeft;
-  animation-duration: 1.5s;
+.logo {
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  animation-name: fadeIn;
   animation-delay: 1.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
-  align-self: center;
-  color: white;
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: space-evenly;
-  animation-name: slideInFromLeft;
+  animation-name: slideIn;
   animation-duration: 1.5s;
-  animation-delay: 1.5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
 .moreButton {
-  color: rgb(38, 185, 136);
+  color: white;
   text-decoration: none;
-  background: #ffffff;
   padding: 20px;
-  border: 4px solid rgb(38, 185, 136);
   display: inline-block;
   margin: 0px 20px;
   transition: all 0.3s ease 0s;
-  font-family: "Alata";
+  font-family: "Montserrat";
   font-size: 1.5rem;
-  box-shadow: 0 1px 0px rgb(38, 185, 136) inset, 0 0 1px 0px rgb(38, 185, 136);
+
+  -webkit-font-smoothing: antialiased;
 }
 
 .moreButton:hover {
   color: #ffffff;
-  background: rgb(38, 185, 136);
-  border-color: rgb(38, 185, 136);
-  box-shadow: 0 1px 0px rgb(38, 185, 136) inset, 0 0 1px 0px rgb(38, 185, 136);
+  text-shadow: 0px 0px 2px white;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
@@ -111,7 +118,7 @@
   }
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideIn {
   0% {
     transform: translateY(30%);
     opacity: 0;
@@ -128,5 +135,14 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

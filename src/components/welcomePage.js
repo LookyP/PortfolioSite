@@ -2,11 +2,22 @@ import React from "react"
 import styles from "./welcomePage.module.css"
 import Tilt from "react-parallax-tilt"
 import { Link } from "gatsby"
+import Logo from "../images/logo.png"
+import Background from "../images/background4.mp4"
 
 const WelcomePage = () => {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.overlay}></div>
+        <video
+          muted={true}
+          autoPlay={true}
+          loop
+          className={styles.backgroundVideo}
+        >
+          <source src={Background} type="video/mp4" />
+        </video>
         <Tilt
           className={styles.tiltContainer}
           perspective={700}
@@ -14,12 +25,7 @@ const WelcomePage = () => {
           trackOnWindow={true}
         >
           <div className={styles.introContainer}>
-            <h1 className={styles.firstHeading}>
-              Hey! I'm <span className={styles.name}>LookyP</span>!
-            </h1>
-            <h2 className={styles.secondHeading}>
-              I'm a junior Software Developer
-            </h2>
+            <img className={styles.logo} src={Logo} />
             <div className={styles.buttonContainer}>
               <Link to="/about" className={styles.moreButton}>
                 About Me
