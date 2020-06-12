@@ -1,11 +1,9 @@
 import React from "react"
-import LandingLayout from "../components/landingLayout"
-import AboutMe from "../components/aboutMe"
+import WelcomePage from "../components/welcomePage"
 
 const IndexPage = () => (
   <>
-    <LandingLayout />
-    <AboutMe />
+    <WelcomePage />
   </>
 )
 export default IndexPage
