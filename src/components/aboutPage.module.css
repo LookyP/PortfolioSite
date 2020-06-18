@@ -4,6 +4,19 @@
   align-items: center;
   flex-direction: column;
   background: white;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .topContainer {
@@ -13,15 +26,21 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  z-index: 3;
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .tiltContainer {
-  width: 70%;
-  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   transform-style: preserve-3d;
   /* box-shadow: 0 1px 0px black inset, 0 0 1px 0px black; */
 }
@@ -31,15 +50,20 @@
   align-items: center;
   justify-content: center;
   height: 60%;
-  transform: translateZ(80px);
+  transform: translateZ(150px);
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .title {
-  font-family: "Alata";
-  font-size: 4rem;
+  font-family: "Montserrat";
+  font-size: 3.25rem;
   margin: 0;
   align-self: center;
-  color: black;
+  color: white;
 }
 
 @keyframes AnimationName {
@@ -51,5 +75,14 @@
   }
   100% {
     background-position: 0% 99%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
