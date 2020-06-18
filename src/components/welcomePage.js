@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "./welcomePage.module.css"
 import Tilt from "react-parallax-tilt"
-import { Link } from "gatsby"
 import Logo from "../images/logo.png"
 import Background from "../images/background4.mp4"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const WelcomePage = () => {
   return (
@@ -27,9 +27,9 @@ const WelcomePage = () => {
           <div className={styles.introContainer}>
             <img className={styles.logo} src={Logo} />
             <div className={styles.buttonContainer}>
-              <Link to="/about" className={styles.moreButton}>
+              <AniLink fade to="/about" className={styles.moreButton}>
                 About Me
-              </Link>
+              </AniLink>
               <a href="#masterpieces" className={styles.moreButton}>
                 Projects
               </a>

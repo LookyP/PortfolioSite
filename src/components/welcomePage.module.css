@@ -19,7 +19,7 @@
   animation-name: lightToDark;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes lightToDark {
@@ -48,14 +48,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateZ(80px);
+  transform: translateZ(150px);
 }
 
 .logo {
   max-width: 100%;
   display: block;
   animation-name: fadeIn;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -75,7 +75,7 @@
   justify-content: space-evenly;
   animation-name: slideIn;
   animation-duration: 1.5s;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
