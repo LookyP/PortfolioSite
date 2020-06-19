@@ -1,0 +1,43 @@
+.headerContainer {
+  /*Main container for the header*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.elementsContainer {
+  /*Container to easily manipulate the width of elements*/
+  width: 100%;
+  margin: 20px 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainTitle {
+  font-family: "Montserrat";
+  font-size: 40px;
+  color: white;
+  font-weight: 100;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  margin: 0px 20px;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}

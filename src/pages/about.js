@@ -1,9 +1,4 @@
 import React from "react"
-import About from "../components/aboutPage"
 
-const AboutPage = () => (
-  <>
-    <About />
-  </>
-)
+const AboutPage = () => <></>
 export default AboutPage

@@ -9,7 +9,15 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+=======
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+>>>>>>> Stashed changes
+=======
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+>>>>>>> Stashed changes
         />
         {props.headComponents}
       </head>
