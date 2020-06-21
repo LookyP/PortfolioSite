@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/header"
+import Footer from "../components/footer"
 import styles from "./index.module.css"
 
 const IndexPage = () => (
@@ -7,7 +8,7 @@ const IndexPage = () => (
     <Header />
     <div className={styles.container}>
       <div className={styles.containerOne}>
-        <div className={styles.oneTitle}>Hi</div>
+        <div className={styles.oneTitle}>Hi!</div>
         <div className={styles.oneBody}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -19,6 +20,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </>
 )
 export default IndexPage
