@@ -29,9 +29,9 @@ export default function HTML(props) {
           window.onscroll = function() {
           var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
-              document.getElementById("header").style.top = "0";
+              document.getElementById("header").style.backgroundColor = "rgba(37, 37, 37, 1)";
             } else {
-              document.getElementById("header").style.top = "-100px";
+              document.getElementById("header").style.backgroundColor = "rgba(10, 10, 10, 0.6)";
             }
             prevScrollpos = currentScrollPos;
           }

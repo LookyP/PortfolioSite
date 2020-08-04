@@ -17,11 +17,13 @@
   font-size: 70px;
   margin: 10px 0px 20px 0px;
   font-weight: bold;
+  color: white;
 }
 
 .oneBody {
   font-family: "Montserrat";
   font-size: 25px;
+  color: white;
 }
 
 .containerTwo {
