@@ -1,9 +1,41 @@
+.menu {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  align-self: center;
+}
+.menuIcon:hover .menuIconLine {
+  box-shadow: 2px 2px 25px white;
+}
+
+.menuIconLine {
+  width: 35px;
+  height: 5px;
+  background-color: var(--main-text-colour);
+  margin: 6px 0;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
 .headerContainer {
   /*Main container for the header*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #252525;
+  background-color: #1c1d21;
   position: fixed;
   width: 100%;
   transition: all 0.2s;
@@ -12,42 +44,78 @@
 .elementsContainer {
   /*Container to easily manipulate the width of elements*/
   width: 100%;
-  margin: 20px 400px;
-  display: flex;
+  margin: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
 }
 
 .mainTitle {
-  font-family: "Montserrat";
+  font-family: var(--main-header-font);
   font-size: 40px;
-  color: white;
+  color: var(--main-text-colour);
   font-weight: 100;
+  text-align: center;
 }
 
-.linksContainer {
+.rightLinksContainer {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+.leftLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menuLinksContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .link {
-  font-family: "Montserrat";
-  color: white;
+  font-family: var(--main-header-font);
+  font-size: 16px;
+  color: var(--main-text-colour);
   font-weight: bold;
   margin: 0px 20px;
   padding: 20px;
-  transition: all 0.5s;
+  transition: all 0.3s;
   text-decoration: none;
+}
+
+.menuLinksContainer .link {
+  font-size: 25px;
 }
 
 .link:hover {
   cursor: pointer;
-  background-color: white;
-  color: black;
+  text-shadow: 0px 0px 25px white;
 }
 
 @media only screen and (max-width: 1350px) {
   .elementsContainer {
+    width: 100%;
     margin: 20px 50px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+  }
+  .rightLinksContainer {
+    display: none;
+  }
+  .leftLinksContainer {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .mainTitle {
+    font-size: 30px;
   }
 }

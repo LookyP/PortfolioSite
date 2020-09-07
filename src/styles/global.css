@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --main-text-font: "Montserrat";
+  --main-text-colour: #a0edea;
+  --main-header-font: "Raleway";
+  --main-heading-size: 3.5rem;
+}
 
 html {
   scroll-behavior: smooth;

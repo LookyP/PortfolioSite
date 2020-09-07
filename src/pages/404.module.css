@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sadImage {
+  height: 200px;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+.message {
+  font-family: var(--main-text-font);
+  color: var(--main-text-colour);
+  font-size: 20px;
+}
+
+.link {
+  font-family: var(--main-header-font);
+  color: var(--main-text-colour);
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 25px white;
+}

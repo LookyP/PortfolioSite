@@ -22,16 +22,16 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
       </body>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `
-          let prevScrollpos = window.pageYOffset;
           window.onscroll = function() {
-          var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-              document.getElementById("header").style.backgroundColor = "rgba(37, 37, 37, 1)";
+          let currentScrollPos = window.pageYOffset;
+            if (currentScrollPos == 0) {
+              document.getElementById("header").style.backgroundColor = "#1c1d21";
             } else {
-              document.getElementById("header").style.backgroundColor = "rgba(10, 10, 10, 0.6)";
+              document.getElementById("header").style.backgroundColor = "rgb(0,0,0, 0.5)";
             }
             prevScrollpos = currentScrollPos;
           }
