@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
 
 :root {
   --main-text-font: "Montserrat";
-  --main-text-colour: #a0edea;
+  --main-text-colour: black;
   --main-header-font: "Raleway";
   --main-heading-size: 3.5rem;
 }
@@ -17,3 +18,5 @@ body {
   overflow-y: scroll;
   margin: 0;
 }
+
+/*Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/

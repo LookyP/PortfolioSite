@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./header.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Typewriter from "typewriter-effect"
+import Logo from "../images/logo.svg"
 
 const Header = () => {
   const handleMenuButtonClick = () => {
@@ -37,46 +37,21 @@ const Header = () => {
           </div>
 
           <div className={styles.leftLinksContainer}>
-            <AniLink fade to="/" className={styles.link}>
-              Home
-            </AniLink>
-            <AniLink fade to="about" className={styles.link}>
-              About
-            </AniLink>
-          </div>
-
-          <div className={styles.mainTitle}>
-            <Typewriter
-              id="Hello"
-              options={{
-                strings: [
-                  "LookyP",
-                  "Junior Software Dev",
-                  "Aspiring Full Stack Dev",
-                ],
-                autoStart: true,
-                loop: true,
-                wrapperClassName: styles.mainTitle,
-              }}
-              onInit={typewriter => {
-                typewriter
-
-                  .callFunction(() => {
-                    console.log("String typed out!")
-                  })
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .callFunction(() => {
-                    console.log("All strings were deleted")
-                  })
-                  .start()
-              }}
-            />
+            <img className={styles.logo} src={Logo} />
+            <span>
+              <div className={styles.logoName}>lp</div>
+            </span>
           </div>
 
           <div className={styles.rightLinksContainer}>
-            <div className={styles.link}>GitHub</div>
-            <div className={styles.link}>Blog</div>
+            <AniLink fade to="/" className={styles.link}>
+              HOME
+            </AniLink>
+            <AniLink fade to="about" className={styles.link}>
+              ABOUT
+            </AniLink>
+            <div className={styles.link}>GITHUB</div>
+            <div className={styles.link}>BLOG</div>
           </div>
         </div>
       </div>
