@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./header.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "../images/logo.svg"
+import { Link } from "gatsby"
 
 const Header = () => {
   const handleMenuButtonClick = () => {
@@ -44,14 +45,43 @@ const Header = () => {
           </div>
 
           <div className={styles.rightLinksContainer}>
-            <AniLink fade to="/" className={styles.link}>
-              HOME
-            </AniLink>
-            <AniLink fade to="about" className={styles.link}>
-              ABOUT
-            </AniLink>
-            <div className={styles.link}>GITHUB</div>
-            <div className={styles.link}>BLOG</div>
+            <Link
+              to="/"
+              activeClassName={styles.activeLink}
+              className={styles.link}
+            >
+              <AniLink fade to="/" className={styles.aniLink}>
+                HOME
+              </AniLink>
+            </Link>
+
+            <Link
+              to="/about"
+              activeClassName={styles.activeLink}
+              className={styles.link}
+            >
+              <AniLink fade to="/about" className={styles.aniLink}>
+                ABOUT
+              </AniLink>
+            </Link>
+            <Link
+              to="/github"
+              activeClassName={styles.activeLink}
+              className={styles.link}
+            >
+              <AniLink fade to="/github" className={styles.aniLink}>
+                GITHUB
+              </AniLink>
+            </Link>
+            <Link
+              to="/blog"
+              activeClassName={styles.activeLink}
+              className={styles.link}
+            >
+              <AniLink fade to="/blog" className={styles.aniLink}>
+                BLOG
+              </AniLink>
+            </Link>
           </div>
         </div>
       </div>

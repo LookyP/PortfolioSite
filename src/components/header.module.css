@@ -85,22 +85,37 @@
 }
 
 .link {
-  font-family: var(--main-header-font);
-  font-size: 16px;
-  color: var(--main-text-colour);
-  font-weight: bold;
   margin-left: 30px;
   padding: 20px;
   transition: all 0.3s;
   text-decoration: none;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.link:hover {
+  background-color: black;
+}
+
+.link:hover .aniLink {
+  color: white;
+}
+
+.aniLink {
+  text-decoration: none;
+  font-family: var(--main-header-font);
+  font-size: 16px;
+  color: var(--main-text-colour);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.activeLink {
+  border: 1px solid black;
 }
 
 .menuLinksContainer .link {
   font-size: 25px;
-}
-
-.link:hover {
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 1350px) {
