@@ -7,6 +7,8 @@
   --main-text-colour: black;
   --main-header-font: "Raleway";
   --main-heading-size: 3.5rem;
+  --secondary-color: #282828;
+  --secondary-text-color: white;
 }
 
 html {

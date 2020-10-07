@@ -6,6 +6,13 @@
   height: 100vh;
 }
 
+.title {
+  font-family: var(--main-text-font);
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
 .sadImage {
   height: 200px;
   width: auto;

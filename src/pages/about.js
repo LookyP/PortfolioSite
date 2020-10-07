@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styles from "./about.module.css"
-import ProfileImage from "../images/ProfilePicture.jpg"
+import ProfileImage from "../images/Profile.jpg"
 
 const AboutPage = () => (
   <>

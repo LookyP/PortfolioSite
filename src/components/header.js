@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./header.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "../images/logo.svg"
 import { Link } from "gatsby"
 
@@ -19,12 +18,12 @@ const Header = () => {
     <>
       <div id="menu" className={styles.menu} onClick={handleMenuModalClick}>
         <div className={styles.menuLinksContainer}>
-          <AniLink fade to="/" className={styles.link}>
+          <Link to="/" className={styles.link}>
             Home
-          </AniLink>
-          <AniLink fade to="about" className={styles.link}>
+          </Link>
+          <Link to="/about" className={styles.link}>
             About
-          </AniLink>
+          </Link>
           <div className={styles.link}>GitHub</div>
           <div className={styles.link}>Blog</div>
         </div>
@@ -50,9 +49,7 @@ const Header = () => {
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              <AniLink fade to="/" className={styles.aniLink}>
-                HOME
-              </AniLink>
+              HOME
             </Link>
 
             <Link
@@ -60,27 +57,23 @@ const Header = () => {
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              <AniLink fade to="/about" className={styles.aniLink}>
-                ABOUT
-              </AniLink>
+              ABOUT
             </Link>
+
             <Link
               to="/github"
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              <AniLink fade to="/github" className={styles.aniLink}>
-                GITHUB
-              </AniLink>
+              GITHUB
             </Link>
+
             <Link
               to="/blog"
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              <AniLink fade to="/blog" className={styles.aniLink}>
-                BLOG
-              </AniLink>
+              BLOG
             </Link>
           </div>
         </div>
