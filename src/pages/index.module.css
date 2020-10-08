@@ -34,7 +34,6 @@
 
 /* Second section */
 .containerTwo {
-  margin-bottom: 200px; /*Get rid*/
   width: 100%;
   padding: 20vh 6vw;
   background-color: var(--secondary-color);
@@ -99,7 +98,6 @@
   transition: all 0.3s;
   text-decoration: none;
   border: 1px solid white;
-  text-decoration: none;
   font-family: var(--main-header-font);
   font-size: 12px;
   color: white;
@@ -110,11 +108,91 @@
 
 .twoButton:hover {
   background-color: white;
-  color: black;
+  color: var(--primary-text-color);
   border: 1px solid transparent;
 }
 
-/* Mobile */
+/* Third Section */
+.containerThree {
+  width: 100%;
+  padding: 20vh 6vw;
+  background-color: white;
+  /* background-image: var(--secondary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.threeMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
+}
+
+.threeImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.threeImage {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.threeBodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.threeTitle {
+  font-family: Georgia;
+  font-size: 46px;
+  color: var(--primary-text-color);
+  margin: 0px 0px 20px 0px;
+}
+
+.threeBody {
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--primary-text-color);
+  margin-left: 0px;
+}
+
+.threeButton {
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  border: 1px solid black;
+  text-decoration: none;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.threeButton:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+}
+
+/* Smaller screen */
 @media only screen and (max-width: 1200px) {
   .containerOne {
     margin: 0px 50px 0px 50px;
@@ -134,11 +212,70 @@
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 800px) {
   .oneTitle {
     font-size: 1.8rem;
   }
   .oneBody {
     font-size: 1rem;
+  }
+  .containerTwo {
+    padding: 10vh 6vw;
+  }
+  .twoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .twoImage {
+    max-height: 400px;
+  }
+  .twoBodyContainer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .twoTitle {
+    font-size: 1.8rem;
+  }
+  .twoBody {
+    font-size: 1rem;
+  }
+  .twoButton {
+    align-self: center;
+  }
+
+  .containerThree {
+    padding: 10vh 6vw;
+  }
+  .threeImageContainer {
+    grid-row-start: 1;
+  }
+  .threeMain {
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .threeImage {
+    max-height: 400px;
+  }
+  .threeBodyContainer {
+    grid-row-start: 2;
+    text-align: center;
+    margin-top: 30px;
+    grid-row-start: 2;
+  }
+  .threeTitle {
+    font-size: 1.8rem;
+  }
+  .threeBody {
+    font-size: 1rem;
+  }
+  .threeButton {
+    align-self: center;
   }
 }

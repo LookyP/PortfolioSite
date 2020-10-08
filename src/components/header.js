@@ -24,8 +24,8 @@ const Header = () => {
           <Link to="/about" className={styles.link}>
             ABOUT
           </Link>
-          <div className={styles.link}>GITHUB</div>
           <div className={styles.link}>BLOG</div>
+          <div className={styles.link}>GITHUB</div>
         </div>
       </div>
       <div id="header" className={styles.headerContainer}>
@@ -61,19 +61,19 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/github"
-              activeClassName={styles.activeLink}
-              className={styles.link}
-            >
-              GITHUB
-            </Link>
-
-            <Link
               to="/blog"
               activeClassName={styles.activeLink}
               className={styles.link}
             >
               BLOG
+            </Link>
+
+            <Link
+              to="/github"
+              activeClassName={styles.activeLink}
+              className={styles.link}
+            >
+              GITHUB
             </Link>
           </div>
         </div>
