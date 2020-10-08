@@ -1,9 +1,11 @@
+/* Main Container */
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/* First section */
 .containerOne {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
 }
 
 .oneTitle {
-  font-family: var(--main-text-font);
+  font-family: Georgia;
   font-size: var(--main-heading-size);
   margin: 10px 0px 20px 0px;
   color: var(--main-text-colour);
@@ -27,16 +29,17 @@
 .oneBody {
   font-family: var(--main-text-font);
   font-size: 25px;
-  color: var(--main-text-colour);
+  color: #121212;
 }
 
+/* Second section */
 .containerTwo {
   margin-bottom: 200px; /*Get rid*/
   width: 100%;
-  height: 100vh;
+  padding: 20vh 6vw;
   background-color: var(--secondary-color);
-  background-image: var(--secondary-color);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  /* background-image: var(--secondary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
   border-top: 0;
   display: flex;
   align-items: center;
@@ -46,9 +49,11 @@
 .twoMain {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
+  margin: 0 50px;
 }
 
 .twoImageContainer {
@@ -59,7 +64,10 @@
 }
 
 .twoImage {
-  max-width: 500px;
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
 }
 
 .twoBodyContainer {
@@ -69,21 +77,45 @@
 }
 
 .twoTitle {
-  font-family: var(--main-text-font);
-  font-size: 40px;
+  font-family: Georgia;
+  font-size: 46px;
   color: var(--secondary-text-color);
-  margin: 0px 0px 20px 50px;
+  margin: 0px 0px 20px 0px;
 }
 
 .twoBody {
   font-family: var(--main-text-font);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   color: var(--secondary-text-color);
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
-@media only screen and (max-width: 1350px) {
+.twoButton {
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  border: 1px solid white;
+  text-decoration: none;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.twoButton:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid transparent;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1200px) {
   .containerOne {
     margin: 0px 50px 0px 50px;
   }

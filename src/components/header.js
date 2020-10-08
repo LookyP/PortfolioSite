@@ -19,13 +19,13 @@ const Header = () => {
       <div id="menu" className={styles.menu} onClick={handleMenuModalClick}>
         <div className={styles.menuLinksContainer}>
           <Link to="/" className={styles.link}>
-            Home
+            HOME
           </Link>
           <Link to="/about" className={styles.link}>
-            About
+            ABOUT
           </Link>
-          <div className={styles.link}>GitHub</div>
-          <div className={styles.link}>Blog</div>
+          <div className={styles.link}>GITHUB</div>
+          <div className={styles.link}>BLOG</div>
         </div>
       </div>
       <div id="header" className={styles.headerContainer}>

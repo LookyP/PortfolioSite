@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styles from "./index.module.css"
 import Typewriter from "typewriter-effect"
@@ -33,11 +34,18 @@ const IndexPage = () => (
             </div>
 
             <div className={styles.twoBodyContainer}>
-              <div className={styles.twoTitle}>Perfectionist by Nature</div>
-              <div className={styles.twoBody}>
-                Let's be honest, no one wants a 'nearly' done job. Why would
-                you? When there's the perfectionist.
+              <div className={styles.twoTitle}>
+                Striving for continuous progress and improvement
               </div>
+              <div className={styles.twoBody}>
+                As an introverted human being with a growth-mindset and a
+                passion for what I do, I welcome and invite you to my site; a
+                place where you can learn more about me. Read more on the about
+                page.
+              </div>
+              <Link to="/about" className={styles.twoButton}>
+                READ MORE &nbsp; &gt;
+              </Link>
             </div>
           </div>
         </div>
