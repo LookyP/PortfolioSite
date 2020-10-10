@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  /* background-color: #ffecd2;
+  background-image: linear-gradient(19deg, #ffecd2 0%, #fcb69f 100%); */
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* First section */
@@ -24,6 +32,9 @@
   font-size: var(--main-heading-size);
   margin: 10px 0px 20px 0px;
   color: var(--main-text-colour);
+  background: linear-gradient(19deg, #434343 0%, #000000 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .oneBody {
@@ -36,9 +47,8 @@
 .containerTwo {
   width: 100%;
   padding: 20vh 6vw;
-  background-color: var(--secondary-color);
-  /* background-image: var(--secondary-color);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+  background: linear-gradient(19deg, #434343 0%, #000000 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   border-top: 0;
   display: flex;
   align-items: center;
@@ -116,7 +126,7 @@
 .containerThree {
   width: 100%;
   padding: 20vh 6vw;
-  background-color: white;
+  /* background-color: white; */
   /* background-image: var(--secondary-color);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
   border-top: 0;
@@ -221,7 +231,7 @@
     font-size: 1rem;
   }
   .containerTwo {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
   }
   .twoMain {
     display: flex;
@@ -247,7 +257,7 @@
   }
 
   .containerThree {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
   }
   .threeImageContainer {
     grid-row-start: 1;

@@ -30,7 +30,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className={styles.containerTwo}>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={350}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={300}>
             <div className={styles.twoMain}>
               <div className={styles.twoImageContainer}>
                 <img className={styles.twoImage} src={Placeholder}></img>
@@ -51,7 +51,7 @@ const IndexPage = () => (
           </ScrollAnimation>
         </div>
         <div className={styles.containerThree}>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={350}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={300}>
             <div className={styles.threeMain}>
               <div className={styles.threeBodyContainer}>
                 <div className={styles.threeTitle}>Relax 'n' Read</div>
