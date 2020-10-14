@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./header.module.css"
 import Logo from "../images/logo.svg"
 import { Link } from "gatsby"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Header = () => {
   const handleMenuButtonClick = () => {

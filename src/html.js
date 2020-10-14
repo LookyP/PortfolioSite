@@ -36,7 +36,7 @@ export default function HTML(props) {
             if (currentScrollPos == 0) {
               document.getElementById("header").style.backgroundColor = "white";
             } else {
-              document.getElementById("header").style.backgroundColor = "#cccccc";
+              document.getElementById("header").style.backgroundColor = "rgba(67, 67, 67, 0.5)";
             }
             prevScrollpos = currentScrollPos;
           }

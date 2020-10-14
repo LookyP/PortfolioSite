@@ -44,24 +44,29 @@
   width: 100%;
   transition: all 0.2s;
   z-index: 2;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  opacity: 0;
 }
 
 .elementsContainer {
   /*Container to easily manipulate the width of elements*/
   width: 100%;
-  margin: 20px 50px;
+  margin: 20px 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
 .logo {
-  width: 45px;
+  width: 35px;
 }
 
 .logoName {
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 30px;
   color: var(--main-text-colour);
   font-weight: bold;
   text-align: center;
@@ -98,7 +103,7 @@
   font-weight: bold;
   position: relative;
   border-radius: 5px;
-  background: white;
+  background: transparent;
 }
 
 .link:hover {
@@ -113,6 +118,15 @@
 .menuLinksContainer .link {
   font-size: 25px;
   margin: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

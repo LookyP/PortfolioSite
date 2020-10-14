@@ -32,9 +32,6 @@
   font-size: var(--main-heading-size);
   margin: 10px 0px 20px 0px;
   color: var(--main-text-colour);
-  background: linear-gradient(19deg, #434343 0%, #000000 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .oneBody {
@@ -49,6 +46,10 @@
   padding: 20vh 6vw;
   background: linear-gradient(19deg, #434343 0%, #000000 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 0;
   display: flex;
   align-items: center;

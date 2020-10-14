@@ -24,9 +24,12 @@ const IndexPage = () => (
                 }}
               />
             </div>
-            <div className={styles.oneBody}>
-              Curiosity. Passion. Determination.
-            </div>
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={2200} initiallyVisible={false}>
+              <div className={styles.oneBody}>
+                Curiosity. Passion. Determination.
+              </div>
+            </ScrollAnimation>
+            
           </div>
         </div>
         <div className={styles.containerTwo}>
