@@ -1,6 +1,6 @@
 .menu {
   width: 100vw;
-  height: 100%;
+  height: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,6 @@
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
   opacity: 0;
-  visibility: hidden;
   transition: all 0.3s;
 }
 
@@ -44,11 +43,6 @@
   width: 100%;
   transition: all 0.2s;
   z-index: 2;
-  animation-name: fadeIn;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 2.2s;
-  opacity: 0;
 }
 
 .elementsContainer {
@@ -95,8 +89,6 @@
   padding: 20px;
   transition: all 0.3s;
   text-decoration: none;
-  /* border: 1px solid transparent; */
-  text-decoration: none;
   font-family: var(--main-header-font);
   font-size: 14px;
   color: var(--main-text-colour);
@@ -106,27 +98,40 @@
   background: transparent;
 }
 
-.link:hover {
-  color: lightgrey;
-  background: #010101;
+.link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
-.activeLink {
-  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.1);
+.link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.activeLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
 }
 
 .menuLinksContainer .link {
   font-size: 25px;
   margin: 0;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media only screen and (max-width: 1200px) {

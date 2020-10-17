@@ -6,12 +6,14 @@ import Typewriter from "typewriter-effect"
 import Placeholder from "../images/Profile2.jpg"
 import Blog from "../images/Blog.jpg"
 import ScrollAnimation from "react-animate-on-scroll"
+import Background from "../components/background"
 
 const IndexPage = () => (
   <>
     <Layout>
       <div className={styles.container}>
         <div className={styles.containerOne}>
+          <Background />
           <div className={styles.oneMain}>
             <div className={styles.oneTitle}>
               <Typewriter
@@ -24,12 +26,10 @@ const IndexPage = () => (
                 }}
               />
             </div>
-            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={2200} initiallyVisible={false}>
-              <div className={styles.oneBody}>
-                Curiosity. Passion. Determination.
-              </div>
-            </ScrollAnimation>
-            
+
+            <div className={styles.oneBody}>
+              Curiosity. Passion. Determination.
+            </div>
           </div>
         </div>
         <div className={styles.containerTwo}>

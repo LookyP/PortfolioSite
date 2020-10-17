@@ -6,14 +6,17 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 const Header = () => {
   const handleMenuButtonClick = () => {
-    document.getElementById("menu").style.visibility = "visible"
+    document.getElementById("menu").style.height = "100%"
     document.getElementById("menu").style.opacity = "1"
+    document.body.style.position = "fixed";
   }
 
   const handleMenuModalClick = () => {
-    document.getElementById("menu").style.visibility = "hidden"
+    document.getElementById("menu").style.height = "0%"
     document.getElementById("menu").style.opacity = "0"
+    document.body.style.position = "static";
   }
+  
 
   return (
     <>
@@ -25,8 +28,12 @@ const Header = () => {
           <Link to="/about" className={styles.link}>
             ABOUT
           </Link>
-          <div className={styles.link}>BLOG</div>
-          <div className={styles.link}>GITHUB</div>
+          <Link to="/about" className={styles.link}>
+            BLOG
+          </Link>
+          <Link to="/about" className={styles.link}>
+            GITHUB
+          </Link>
         </div>
       </div>
       <div id="header" className={styles.headerContainer}>
@@ -74,7 +81,7 @@ const Header = () => {
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              GITHUB
+              MY WORK
             </Link>
           </div>
         </div>
