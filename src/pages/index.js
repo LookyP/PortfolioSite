@@ -7,11 +7,21 @@ import Placeholder from "../images/Profile2.jpg"
 import Blog from "../images/Blog.jpg"
 import ScrollAnimation from "react-animate-on-scroll"
 import Background from "../components/background"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
   <>
     <Layout>
       <div className={styles.container}>
+        {/* 
+        For email forms visit convertkit
+        <Helmet>
+          <script
+            async
+            data-uid="968998b2b8"
+            src="https://tremendous-crafter-4152.ck.page/968998b2b8/index.js"
+          ></script>
+        </Helmet> */}
         <div className={styles.containerOne}>
           <Background />
           <div className={styles.oneMain}>

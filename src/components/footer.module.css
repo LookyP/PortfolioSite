@@ -1,15 +1,144 @@
 .footerContainer {
-  width: 100%;
-  height: 150px;
   background: linear-gradient(19deg, #434343 0%, #000000 100%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.footerText {
+/* To easily manipulate margin for all footer elements */
+.allElements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 200px 0px;
+  z-index: 100;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.logo {
+  width: 65px;
+}
+
+.logoName {
   font-family: "Montserrat";
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 60px;
   color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainLinksContainer {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 400px;
+  align-items: center;
+  align-self: center;
+}
+
+.rule {
+  width: 100%;
+  z-index: 100;
+}
+
+.navLinksContainer {
+  display: grid;
+  text-align: center;
+}
+
+.navLinksTitle {
+  font-family: var(--main-text-font);
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.navLinks {
+  margin-top: 20px;
+  height: 30px;
+}
+
+.link {
+  margin-left: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: var(--main-header-font);
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.followLinksContainer {
+  display: grid;
+  text-align: center;
+}
+
+.followLinksTitle {
+  font-family: var(--main-text-font);
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.followLinks {
+  margin-top: 20px;
+  height: 30px;
+}
+
+.icon {
+  margin-left: 30px;
+  height: 30px;
+  padding: 0px 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: var(--main-header-font);
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+  background: transparent;
+  filter: invert(1);
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.termsContainer {
+  display: block;
+  font-family: var(--main-text-font);
+  color: white;
+  align-self: center;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-bottom: 10px;
+}
+
+.termsLink {
+  transition: all 0.3s;
+}
+
+.termsLink:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
