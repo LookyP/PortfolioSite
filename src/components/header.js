@@ -7,12 +7,14 @@ const Header = () => {
   const handleMenuButtonClick = () => {
     document.getElementById("menu").style.height = "100%"
     document.getElementById("menu").style.opacity = "1"
+    document.getElementById("menu").style.visibility = "visible"
     document.body.style.overflowY = "hidden"
   }
 
   const handleMenuModalClick = () => {
     document.getElementById("menu").style.height = "0%"
     document.getElementById("menu").style.opacity = "0"
+    document.getElementById("menu").style.visibility = "hidden"
     document.body.style.overflowY = "scroll"
   }
 
@@ -49,7 +51,7 @@ const Header = () => {
             </span>
           </div>
 
-          <div className={styles.rightLinksContainer}>
+          <div id="links" className={styles.rightLinksContainer}>
             <Link
               to="/"
               activeClassName={styles.activeLink}
