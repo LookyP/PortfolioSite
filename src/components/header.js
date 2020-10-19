@@ -2,36 +2,34 @@ import React from "react"
 import styles from "./header.module.css"
 import Logo from "../images/logo.svg"
 import { Link } from "gatsby"
-import ScrollAnimation from "react-animate-on-scroll"
 
 const Header = () => {
   const handleMenuButtonClick = () => {
     document.getElementById("menu").style.height = "100%"
     document.getElementById("menu").style.opacity = "1"
-    document.body.style.position = "fixed";
+    document.body.style.overflowY = "hidden"
   }
 
   const handleMenuModalClick = () => {
     document.getElementById("menu").style.height = "0%"
     document.getElementById("menu").style.opacity = "0"
-    document.body.style.position = "static";
+    document.body.style.overflowY = "scroll"
   }
-  
 
   return (
     <>
       <div id="menu" className={styles.menu} onClick={handleMenuModalClick}>
         <div className={styles.menuLinksContainer}>
-          <Link to="/" className={styles.link}>
+          <Link to="/" className={styles.menuLink}>
             HOME
           </Link>
-          <Link to="/about" className={styles.link}>
+          <Link to="/about" className={styles.menuLink}>
             ABOUT
           </Link>
-          <Link to="/about" className={styles.link}>
+          <Link to="/about" className={styles.menuLink}>
             BLOG
           </Link>
-          <Link to="/about" className={styles.link}>
+          <Link to="/about" className={styles.menuLink}>
             GITHUB
           </Link>
         </div>

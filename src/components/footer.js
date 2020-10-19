@@ -67,10 +67,11 @@ const Footer = () => (
           </div>
         </div>
         <div className={styles.termsContainer}>
-          <div className={styles.copyright}>© LUKMAN PATEL 2020</div>
+          <div className={styles.copyright}>
+            © Lukman Patel 2020. All Rights Reserved.
+          </div>
           <div className={styles.termsLinks}>
-            <span className={styles.termsLink}>PRIVACY</span> |{" "}
-            <span className={styles.termsLink}>LEGAL</span>
+            <span className={styles.termsLink}>Privacy Policy</span>
           </div>
         </div>
       </div>

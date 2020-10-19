@@ -136,9 +136,40 @@
 
 .termsLink {
   transition: all 0.3s;
+  text-decoration: underline;
 }
 
 .termsLink:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 1500px) {
+  .mainLinksContainer {
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mainLinksContainer {
+    gap: 30px;
+  }
+  .link {
+    margin: 0;
+  }
+  .icon {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .mainLinksContainer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .link {
+    padding: 20px 10px;
+    font-size: 10px;
+  }
 }
