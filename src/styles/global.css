@@ -13,6 +13,7 @@
 }
 
 html {
+  /* Issue with scroll up button */
   scroll-behavior: smooth;
 }
 

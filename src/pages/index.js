@@ -2,18 +2,21 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styles from "./index.module.css"
-import Typewriter from "typewriter-effect"
 import Placeholder from "../images/Profile2.jpg"
 import Blog from "../images/Blog.jpg"
 import ScrollAnimation from "react-animate-on-scroll"
 import Background from "../components/background"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
+import TitleArea from "../components/titleArea"
 
 const IndexPage = () => (
   <>
     <Layout>
       <div className={styles.container}>
         <Background />
+        <Helmet>
+          <title>LP - Home</title>
+        </Helmet>
         {/* 
         For email forms visit convertkit
         <Helmet>
@@ -23,25 +26,11 @@ const IndexPage = () => (
             src="https://tremendous-crafter-4152.ck.page/968998b2b8/index.js"
           ></script>
         </Helmet> */}
-        <div className={styles.containerOne}>
-          <div className={styles.oneMain}>
-            <div className={styles.oneTitle}>
-              <Typewriter
-                id="Hello"
-                options={{
-                  strings: ["Lukman Patel", "Junior Software Developer"],
-                  autoStart: true,
-                  loop: true,
-                  wrapperClassName: styles.mainTitle,
-                }}
-              />
-            </div>
-
-            <div className={styles.oneBody}>
-              Curiosity. Passion. Determination.
-            </div>
-          </div>
-        </div>
+        <TitleArea
+          firstWord=""
+          body="Curiosity. Passion. Determination."
+          typewriter={["Lukman Patel", "Junior Software Developer"]}
+        />
         <div className={styles.containerTwo}>
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={300}>
             <div className={styles.twoMain}>

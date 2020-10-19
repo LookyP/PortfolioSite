@@ -6,9 +6,9 @@ import Footer from "./footer"
 export default ({ children }) => (
   <>
     <div className={styles.container}>
-        <Header />
-          {children}
-        <Footer />
+      <Header />
+      {children}
+      <Footer />
     </div>
   </>
 )
