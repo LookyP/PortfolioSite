@@ -50,7 +50,9 @@ const IndexPage = () => (
               </div>
 
               <div className={styles.twoBodyContainer}>
-                <div className={styles.twoTitle}>Be Curious</div>
+                <div className={styles.twoTitle}>
+                  Junior Developer With A Thirst For Improvement
+                </div>
                 <div className={styles.twoBody}>
                   As an introverted human being with a growth-mindset and a
                   passion for what I do, I welcome and invite you to my site; a
