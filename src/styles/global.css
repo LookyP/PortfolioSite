@@ -1,3 +1,5 @@
+/*Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
@@ -13,7 +15,6 @@
 }
 
 html {
-  /* Issue with scroll up button */
   scroll-behavior: smooth;
 }
 
@@ -22,5 +23,3 @@ body {
   overflow-y: scroll;
   margin: 0;
 }
-
-/*Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/

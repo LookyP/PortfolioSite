@@ -1,14 +1,17 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Layout from "../components/layout"
 import styles from "./about.module.css"
-import Background from "../components/background"
-import TitleArea from "../components/titleArea"
+import Layout from "../components/layout"
+import TitleArea from "../components/PageConstructors/titleArea"
+import DarkSection from "../components/PageConstructors/darkSection"
+import SectionOneImage from "../images/landing/firstSection.jpg"
+
+// Reminder: Just created a new component for sections. Make it customisable for light themes too. Make code to get rid of button too, just for the about page.
+//           CSS is still in index.js, must sort out. Make two components, one left and one right aligned.
 
 const AboutPage = () => (
   <>
     <Layout>
-      <Background />
       <Helmet>
         <title>LP - About</title>
       </Helmet>
@@ -17,6 +20,14 @@ const AboutPage = () => (
           firstWord="My&nbsp;"
           body="About Me."
           typewriter={["knowledge", "skills", "personality", "aspirations"]}
+        />
+        <DarkSection
+          title="Who Am I"
+          text="An introduction to who I am"
+          image={SectionOneImage}
+          buttonText="PRETTY COOL RIGHT?"
+          buttonLink="/about"
+          dark={true}
         />
       </div>
     </Layout>

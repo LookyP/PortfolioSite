@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./404.module.css"
 import Layout from "../components/layout"
-import SadFace from "../images/404Image.svg"
+import SadFace from "../images/404/404Image.svg"
 
 const Page404 = () => (
   <>

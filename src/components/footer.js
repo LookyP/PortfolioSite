@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./footer.module.css"
-import Logo from "../images/logo-light.svg"
-import Facebook from "../images/Facebook.png"
-import Twitter from "../images/Twitter.png"
-import YouTube from "../images/YT.png"
-import LinkedIn from "../images/LinkedIn.png"
+import Logo from "../images/logo/logo-light.svg"
+import Facebook from "../images/socialmedia/Facebook.png"
+import Twitter from "../images/socialmedia/Twitter.png"
+import YouTube from "../images/socialmedia/YT.png"
+import LinkedIn from "../images/socialmedia/LinkedIn.png"
 
 const Footer = () => (
   <>
@@ -51,7 +51,7 @@ const Footer = () => (
                 activeClassName={styles.activeLink}
                 className={styles.link}
               >
-                MY WORK
+                PROJECTS
               </Link>
             </div>
           </div>

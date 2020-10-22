@@ -3,46 +3,93 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  /* background-color: #ffecd2;
-  background-image: linear-gradient(19deg, #ffecd2 0%, #fcb69f 100%); */
 }
 
 /* First section */
 .containerOne {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.oneMain {
-  margin-left: 200px;
-  padding-left: 100px;
-}
-
-.oneTitle {
-  font-family: Georgia;
-  font-size: var(--main-heading-size);
-  margin: 10px 0px 20px 0px;
-  color: var(--main-text-colour);
-}
-
-.oneBody {
-  font-family: var(--main-text-font);
-  font-size: 25px;
-  color: #121212;
-}
-
-/* Second section */
-.containerTwo {
   width: 100%;
   padding: 20vh 6vw;
   background: linear-gradient(19deg, #434343 0%, #000000 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
+}
+
+.oneImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneImage {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.oneBodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oneTitle {
+  font-family: Georgia;
+  font-size: 46px;
+  color: var(--secondary-text-color);
+  margin: 0px 0px 20px 0px;
+}
+
+.oneBody {
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--secondary-text-color);
+  margin-left: 0px;
+}
+
+.oneButton {
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  border: 1px solid white;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.oneButton:hover {
+  background-color: white;
+  color: var(--primary-text-color);
+  border: 1px solid transparent;
+}
+
+/* Second Section */
+.containerTwo {
+  width: 100%;
+  padding: 20vh 6vw;
   border-top: 0;
   display: flex;
   align-items: center;
@@ -82,7 +129,7 @@
 .twoTitle {
   font-family: Georgia;
   font-size: 46px;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   margin: 0px 0px 20px 0px;
 }
 
@@ -90,92 +137,11 @@
   font-family: var(--main-text-font);
   font-size: 14px;
   line-height: 30px;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   margin-left: 0px;
 }
 
 .twoButton {
-  align-self: flex-start;
-  cursor: pointer;
-  margin-top: 30px;
-  padding: 20px;
-  transition: all 0.3s;
-  text-decoration: none;
-  border: 1px solid white;
-  font-family: var(--main-header-font);
-  font-size: 12px;
-  color: white;
-  font-weight: bold;
-  position: relative;
-  border-radius: 5px;
-}
-
-.twoButton:hover {
-  background-color: white;
-  color: var(--primary-text-color);
-  border: 1px solid transparent;
-}
-
-/* Third Section */
-.containerThree {
-  width: 100%;
-  padding: 20vh 6vw;
-  /* background-color: white; */
-  /* background-image: var(--secondary-color);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
-  border-top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.threeMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 50px;
-  z-index: 4;
-}
-
-.threeImageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.threeImage {
-  max-width: 100%;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  align-self: center;
-}
-
-.threeBodyContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.threeTitle {
-  font-family: Georgia;
-  font-size: 46px;
-  color: var(--primary-text-color);
-  margin: 0px 0px 20px 0px;
-}
-
-.threeBody {
-  font-family: var(--main-text-font);
-  font-size: 14px;
-  line-height: 30px;
-  color: var(--primary-text-color);
-  margin-left: 0px;
-}
-
-.threeButton {
   align-self: flex-start;
   cursor: pointer;
   margin-top: 30px;
@@ -191,46 +157,51 @@
   border-radius: 5px;
 }
 
-.threeButton:hover {
+.twoButton:hover {
   background-color: black;
   color: white;
   border: 1px solid transparent;
 }
 
-/* Smaller screen */
-@media only screen and (max-width: 1200px) {
-  .containerOne {
-    margin: 0px 50px 0px 50px;
-  }
-
-  .oneMain {
-    margin: 0 auto;
-    padding: 0;
-  }
-  .oneTitle {
-    display: flex;
-    justify-content: center;
-  }
-  .oneBody {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 /* Mobile */
 @media only screen and (max-width: 800px) {
+  .containerOne {
+    padding: 15vh 6vw;
+  }
+  .oneMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .oneImage {
+    max-height: 400px;
+  }
+  .oneBodyContainer {
+    text-align: center;
+    margin-top: 30px;
+  }
   .oneTitle {
     font-size: 1.8rem;
   }
   .oneBody {
     font-size: 1rem;
   }
+  .oneButton {
+    align-self: center;
+  }
+
   .containerTwo {
     padding: 15vh 6vw;
   }
+  .twoImageContainer {
+    grid-row-start: 1;
+  }
   .twoMain {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: none;
     justify-content: center;
     align-items: center;
   }
@@ -238,8 +209,10 @@
     max-height: 400px;
   }
   .twoBodyContainer {
+    grid-row-start: 2;
     text-align: center;
     margin-top: 30px;
+    grid-row-start: 2;
   }
   .twoTitle {
     font-size: 1.8rem;
@@ -248,39 +221,6 @@
     font-size: 1rem;
   }
   .twoButton {
-    align-self: center;
-  }
-
-  .containerThree {
-    padding: 15vh 6vw;
-  }
-  .threeImageContainer {
-    grid-row-start: 1;
-  }
-  .threeMain {
-    display: grid;
-    height: auto;
-    grid-template-rows: 1fr 0.5fr;
-    grid-template-columns: none;
-    justify-content: center;
-    align-items: center;
-  }
-  .threeImage {
-    max-height: 400px;
-  }
-  .threeBodyContainer {
-    grid-row-start: 2;
-    text-align: center;
-    margin-top: 30px;
-    grid-row-start: 2;
-  }
-  .threeTitle {
-    font-size: 1.8rem;
-  }
-  .threeBody {
-    font-size: 1rem;
-  }
-  .threeButton {
     align-self: center;
   }
 }

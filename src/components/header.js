@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "./header.module.css"
-import Logo from "../images/logo.svg"
 import { Link } from "gatsby"
+import styles from "./header.module.css"
+import Logo from "../images/logo/logo.svg"
 
 const Header = () => {
   const handleMenuButtonClick = () => {
@@ -32,7 +32,7 @@ const Header = () => {
             BLOG
           </Link>
           <Link to="/about" className={styles.menuLink}>
-            GITHUB
+            PROJECTS
           </Link>
         </div>
       </div>
@@ -81,7 +81,7 @@ const Header = () => {
               activeClassName={styles.activeLink}
               className={styles.link}
             >
-              MY WORK
+              PROJECTS
             </Link>
           </div>
         </div>
