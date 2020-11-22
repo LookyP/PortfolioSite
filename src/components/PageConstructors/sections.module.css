@@ -1,0 +1,229 @@
+/* DARK STUFF */
+.containerDark {
+  width: 100%;
+  padding: 20vh 6vw;
+  background: linear-gradient(19deg, #434343 0%, #000000 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
+}
+
+.darkImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkImage {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.darkBodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.darkTitle {
+  font-family: Georgia;
+  font-size: 46px;
+  color: var(--secondary-text-color);
+  margin: 0px 0px 20px 0px;
+}
+
+.darkBody {
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--secondary-text-color);
+  margin-left: 0px;
+}
+
+.darkButton {
+  align-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  border: 1px solid white;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.darkButton:hover {
+  background-color: white;
+  color: var(--primary-text-color);
+  border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  .containerDark {
+    padding: 15vh 6vw;
+  }
+  .darkMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .darkImage {
+    max-height: 400px;
+  }
+  .darkBodyContainer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .darkTitle {
+    font-size: 1.8rem;
+  }
+  .darkBody {
+    font-size: 1rem;
+  }
+  .darkButton {
+    align-self: center;
+  }
+}
+
+/* LIGHT STUFF */
+.containerLight {
+  width: 100%;
+  padding: 20vh 6vw;
+  background: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
+}
+
+.lightImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightImage {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.lightBodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lightTitle {
+  font-family: Georgia;
+  font-size: 46px;
+  color: var(--primary-text-color);
+  margin: 0px 0px 20px 0px;
+}
+
+.lightBody {
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--primary-text-color);
+  margin-left: 0px;
+}
+
+.lightButton {
+  align-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  border: 1px solid black;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.lightButton:hover {
+  background-color: black;
+  color: var(--secondary-text-color);
+  border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  .containerLight {
+    padding: 15vh 6vw;
+  }
+  .lightImage {
+    max-height: 400px;
+  }
+  .lightBodyContainer {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .lightTitle {
+    font-size: 1.8rem;
+  }
+  .lightButton {
+    align-self: center;
+  }
+  .lightImageContainer {
+    grid-row-start: 1;
+  }
+  .lightMain {
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightBodyContainer {
+    grid-row-start: 2;
+    text-align: center;
+    margin-top: 30px;
+    grid-row-start: 2;
+    font-size: 1rem;
+  }
+  .lightBody {
+    font-size: 1rem;
+  }
+}

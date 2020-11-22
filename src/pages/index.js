@@ -1,13 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./index.module.css"
 import Layout from "../components/layout"
 import SectionOneImage from "../images/landing/firstSection.jpg"
 import Blog from "../images/landing/secondSection.jpg"
 import TitleArea from "../components/PageConstructors/titleArea"
-import DarkSection from "../components/PageConstructors/darkSection"
+import SectionTextRight from "../components/PageConstructors/sectionTextRight"
+import SectionTextLeft from "../components/PageConstructors/sectionTextLeft"
 
 const IndexPage = () => (
   <>
@@ -31,7 +30,7 @@ const IndexPage = () => (
           body="Curiosity. Passion. Determination."
           typewriter={["Lukman Patel", "Junior Software Developer"]}
         />
-        <DarkSection
+        <SectionTextRight
           title="Junior Developer With A Thirst For Improvement"
           text="As an introverted human being with a growth-mindset and a
           passion for what I do, I welcome and invite you to my site; a
@@ -41,25 +40,15 @@ const IndexPage = () => (
           buttonLink="/about"
           dark={true}
         />
-        <div className={styles.containerTwo}>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={300}>
-            <div className={styles.twoMain}>
-              <div className={styles.twoBodyContainer}>
-                <div className={styles.twoTitle}>Relax 'n' Read</div>
-                <div className={styles.twoBody}>
-                  Take a dive into my blog posts for some relaxing reads on the
-                  topic of technology and other non-technology related subjects.
-                </div>
-                <Link to="/about" className={styles.twoButton}>
-                  TAKE ME THERE &nbsp; &gt;
-                </Link>
-              </div>
-              <div className={styles.twoImageContainer}>
-                <img className={styles.twoImage} src={Blog}></img>
-              </div>
-            </div>
-          </ScrollAnimation>
-        </div>
+        <SectionTextLeft
+          title="Relax 'n' Read"
+          text="Take a dive into my blog posts for some relaxing reads on the
+                  topic of technology and other non-technology related subjects."
+          image={Blog}
+          buttonText="TAKE ME THERE"
+          buttonLink="/about"
+          dark={false}
+        />
       </div>
     </Layout>
   </>
