@@ -28,7 +28,7 @@
 .menuIconLine {
   width: 35px;
   height: 5px;
-  background-color: var(--main-text-colour);
+  background-color: #feaf2a;
   margin: 6px 0;
   border-radius: 20px;
   transition: all 0.3s;
@@ -62,7 +62,7 @@
 .logoName {
   font-family: "Montserrat";
   font-size: 30px;
-  color: var(--main-text-colour);
+  color: #feaf2a;
   font-weight: bold;
   text-align: center;
 }
@@ -107,7 +107,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: black;
+  background: #feaf2a;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -125,7 +125,7 @@
   height: 2px;
   left: 0;
   position: absolute;
-  background: black;
+  background: #feaf2a;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
 }
@@ -145,7 +145,7 @@
 
 .menuLink:hover {
   cursor: pointer;
-  opacity: 0.5;
+  color: #feaf2a;
 }
 
 @media only screen and (max-width: 1200px) {

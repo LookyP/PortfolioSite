@@ -27,7 +27,7 @@
 .logoName {
   font-family: "Montserrat";
   font-size: 60px;
-  color: white;
+  color: #feaf2a;
   font-weight: bold;
   text-align: center;
 }
@@ -79,7 +79,7 @@
 
 .link:hover {
   cursor: pointer;
-  opacity: 0.5;
+  color: #feaf2a;
 }
 
 .followLinksContainer {
@@ -107,7 +107,6 @@
   text-decoration: none;
   font-family: var(--main-header-font);
   font-size: 14px;
-  color: white;
   font-weight: bold;
   position: relative;
   border-radius: 5px;

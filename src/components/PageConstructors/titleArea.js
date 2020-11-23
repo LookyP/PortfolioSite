@@ -6,7 +6,6 @@ const TitleArea = props => (
   <div className={styles.containerOne}>
     <div className={styles.oneMain}>
       <div className={styles.oneTitle}>
-        <span>{props.firstWord}</span>
         <Typewriter
           options={{
             strings: props.typewriter,
@@ -16,7 +15,6 @@ const TitleArea = props => (
           }}
         />
       </div>
-
       <div className={styles.oneBody}>{props.body}</div>
     </div>
   </div>

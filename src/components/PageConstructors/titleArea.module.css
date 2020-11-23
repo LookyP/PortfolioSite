@@ -9,6 +9,7 @@
 .oneMain {
   margin-left: 200px;
   padding-left: 100px;
+  z-index: 10;
 }
 
 .oneTitle {
@@ -18,6 +19,14 @@
   color: var(--main-text-colour);
   display: flex;
   flex-direction: row;
+  font-style: normal;
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  position: relative;
+  background: white;
+  background: linear-gradient(to left, #feaf2a, white);
+  transform: skew(-10deg);
+  display: inline-block;
 }
 
 .oneBody {

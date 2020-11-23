@@ -7,9 +7,6 @@ import SectionTextRight from "../components/PageConstructors/sectionTextRight"
 import SectionTextLeft from "../components/PageConstructors/sectionTextLeft" //remove
 import SectionOneImage from "../images/landing/firstSection.jpg"
 
-// Reminder: Just created a new component for sections. Make it customisable for light themes too. Make code to get rid of button too, just for the about page.
-//           CSS is still in index.js, must sort out. Make two components, one left and one right aligned.
-
 const AboutPage = () => (
   <>
     <Layout>
@@ -18,9 +15,13 @@ const AboutPage = () => (
       </Helmet>
       <div className={styles.container}>
         <TitleArea
-          firstWord="My&nbsp;"
           body="About Me."
-          typewriter={["knowledge", "skills", "personality", "aspirations"]}
+          typewriter={[
+            "My knowledge",
+            "My skills",
+            "My personality",
+            "My aspirations",
+          ]}
         />
         <SectionTextRight
           title="Who Am I"

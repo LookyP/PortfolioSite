@@ -26,7 +26,6 @@ const IndexPage = () => (
         </Helmet> */}
 
         <TitleArea
-          firstWord=""
           body="Curiosity. Passion. Determination."
           typewriter={["Lukman Patel", "Junior Software Developer"]}
         />

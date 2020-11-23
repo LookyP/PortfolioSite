@@ -20,7 +20,7 @@ const Footer = () => (
         <div className={styles.mainLinksContainer}>
           <div className={styles.navLinksContainer}>
             <div className={styles.navLinksTitle}>BROWSE</div>
-            <hr className={styles.rule} />
+            <hr color="#feaf2a" className={styles.rule} />
             <div className={styles.navLinks}>
               <Link
                 to="/"
@@ -57,7 +57,7 @@ const Footer = () => (
           </div>
           <div className={styles.followLinksContainer}>
             <div className={styles.followLinksTitle}>FOLLOW</div>
-            <hr className={styles.rule} />
+            <hr color="#feaf2a" className={styles.rule} />
             <div className={styles.followLinks}>
               <img src={Facebook} className={styles.icon}></img>
               <img src={Twitter} className={styles.icon}></img>
