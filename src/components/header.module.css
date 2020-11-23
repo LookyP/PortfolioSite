@@ -62,7 +62,8 @@
 .logoName {
   font-family: "Montserrat";
   font-size: 30px;
-  color: #feaf2a;
+  /* color: #feaf2a; */
+  color: black;
   font-weight: bold;
   text-align: center;
 }

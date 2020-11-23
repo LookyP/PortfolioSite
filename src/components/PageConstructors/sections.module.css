@@ -1,3 +1,7 @@
+.noDisplay {
+  display: none;
+}
+
 /* DARK STUFF */
 .containerDark {
   width: 100%;

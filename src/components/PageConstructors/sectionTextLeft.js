@@ -10,19 +10,30 @@ const SectionTextLeft = props => {
     var bodyContainer = styles.darkBodyContainer
     var title = styles.darkTitle
     var body = styles.darkBody
-    var button = styles.darkButton
+    var button
+    if (props.useButton == false) {
+      button = styles.noDisplay
+    } else {
+      button = styles.darkButton
+    }
     var imageContainer = styles.darkImageContainer
     var image = styles.darkImage
-  } else {
+  } else if (props.dark == false) {
     var container = styles.containerLight
     var main = styles.lightMain
     var bodyContainer = styles.lightBodyContainer
     var title = styles.lightTitle
     var body = styles.lightBody
-    var button = styles.lightButton
+    var button
+    if (props.useButton == false) {
+      button = styles.noDisplay
+    } else {
+      button = styles.lightButton
+    }
     var imageContainer = styles.lightImageContainer
     var image = styles.lightImage
   }
+
   return (
     <>
       <div className={container}>
