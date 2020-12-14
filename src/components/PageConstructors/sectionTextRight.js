@@ -4,34 +4,34 @@ import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./sections.module.css"
 
 const SectionTextRight = props => {
-  if (props.dark == true) {
+  if (props.dark === true) {
     var container = styles.containerDark
     var main = styles.darkMain
     var bodyContainer = styles.darkBodyContainer
     var title = styles.darkTitle
     var body = styles.darkBody
     var button
-    if (props.useButton == false) {
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.darkButton
     }
     var imageContainer = styles.darkImageContainer
     var image = styles.darkImage
-  } else {
-    var container = styles.containerLight
-    var main = styles.lightMain
-    var bodyContainer = styles.lightBodyContainer
-    var title = styles.lightTitle
-    var body = styles.lightBody
+  } else if (props.dark === false) {
+    container = styles.containerLight
+    main = styles.lightMain
+    bodyContainer = styles.lightBodyContainer
+    title = styles.lightTitle
+    body = styles.lightBody
     var button
-    if (props.useButton == false) {
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.lightButton
     }
-    var imageContainer = styles.lightImageContainer
-    var image = styles.lightImage
+    imageContainer = styles.lightImageContainer
+    image = styles.lightImage
   }
   return (
     <>
@@ -39,7 +39,7 @@ const SectionTextRight = props => {
         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={300}>
           <div className={main}>
             <div className={imageContainer}>
-              <img className={image} src={props.image}></img>
+              <img className={image} src={props.image} alt="SectionImage"></img>
             </div>
 
             <div className={bodyContainer}>
