@@ -88,28 +88,40 @@
   .containerDark {
     padding: 15vh 6vw;
   }
-  .darkMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .darkImage {
     max-height: 400px;
     box-shadow: -0px 0px 0px 0px #feaf2a;
   }
   .darkBodyContainer {
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .darkTitle {
     font-size: 1.8rem;
   }
-  .darkBody {
-    font-size: 1rem;
-  }
   .darkButton {
     align-self: center;
+  }
+  .darkImageContainer {
+    grid-row-start: 1;
+  }
+  .darkMain {
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .darkBodyContainer {
+    grid-row-start: 2;
+    text-align: center;
+    margin-top: 30px;
+    grid-row-start: 2;
+    font-size: 1rem;
+  }
+  .darkBody {
+    font-size: 1rem;
   }
 }
 

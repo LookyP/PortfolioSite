@@ -4,6 +4,7 @@ import styles from "./index.module.css"
 import Layout from "../components/layout"
 import SectionOneImage from "../images/landing/firstSection.jpg"
 import Blog from "../images/landing/secondSection.jpg"
+import AboutSectionTwoImage from "../images/about/secondSection.jpg"
 import TitleArea from "../components/PageConstructors/titleArea"
 import SectionTextRight from "../components/PageConstructors/sectionTextRight"
 import SectionTextLeft from "../components/PageConstructors/sectionTextLeft"
@@ -27,7 +28,7 @@ const IndexPage = () => (
 
         <TitleArea
           body="Curiosity. Passion. Determination."
-          typewriter={["Lukman Patel", "Junior Software Developer"]}
+          typewriter={["Lukman Patel", "Software Developer"]}
         />
         <SectionTextRight
           title="Junior Developer With A Thirst For Improvement"

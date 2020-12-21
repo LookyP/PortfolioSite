@@ -1,0 +1,148 @@
+/* Dark Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(19deg, #434343 0%, #000000 100%);
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 6vw;
+  z-index: 5;
+}
+
+.title {
+  font-family: "Georgia";
+  font-size: 46px;
+  padding: 20px;
+  margin: 15px 50px;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px;
+  margin: 15px 200px;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 20px;
+  transition: all 0.3s;
+  border: 1px solid #feaf2a;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #feaf2a;
+  color: var(--primary-text-color);
+  border: 1px solid transparent;
+}
+
+/* Light Styles */
+.containerLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.mainBoxLight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 6vw;
+  z-index: 5;
+}
+
+.titleLight {
+  font-family: "Georgia";
+  font-size: 46px;
+  padding: 20px;
+  margin: 15px 50px;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.textLight {
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px;
+  margin: 15px 200px;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.buttonLight {
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.3s;
+  border: 1px solid #feaf2a;
+  font-family: var(--main-header-font);
+  font-size: 12px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+}
+
+.buttonLight:hover {
+  background-color: black;
+  color: #feaf2a;
+  border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  .text {
+    margin: 15px 100px;
+  }
+  .textLight {
+    margin: 15px 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mainBox {
+    padding: 15vh 6vw;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .text {
+    margin: 15px 25px;
+    font-size: 1rem;
+    padding: 20px 0px;
+  }
+  .mainBoxLight {
+    padding: 15vh 6vw;
+  }
+  .titleLight {
+    font-size: 1.8rem;
+  }
+  .textLight {
+    margin: 15px 25px;
+    font-size: 1rem;
+    padding: 20px 0px;
+  }
+}
