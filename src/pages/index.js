@@ -2,9 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import styles from "./index.module.css"
 import Layout from "../components/layout"
-import SectionOneImage from "../images/landing/firstSection.jpg"
+import Skyline from "../images/about/skyline.jpg"
 import Blog from "../images/landing/secondSection.jpg"
-import AboutSectionTwoImage from "../images/about/secondSection.jpg"
 import TitleArea from "../components/PageConstructors/titleArea"
 import SectionTextRight from "../components/PageConstructors/sectionTextRight"
 import SectionTextLeft from "../components/PageConstructors/sectionTextLeft"
@@ -31,11 +30,11 @@ const IndexPage = () => (
           typewriter={["Lukman Patel", "Software Developer"]}
         />
         <SectionTextRight
-          title="Junior Developer With A Thirst For Improvement"
+          title="Software Developer With A Thirst For Improvement"
           text="As an introverted human being with a growth-mindset and a
           passion for what I do, I welcome and invite you to my site; a
           place where you can learn more about me."
-          image={SectionOneImage}
+          image={Skyline}
           buttonText="READ MORE"
           buttonLink="/about"
           dark={true}

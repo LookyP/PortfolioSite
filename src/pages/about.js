@@ -27,7 +27,7 @@ const AboutPage = () => (
           ]}
         />
         <SectionTextRight
-          title="Hi! I'm Lukman, a software developer from Greater Manchester"
+          title="Hi, I'm Lukman, a Software Developer from Greater Manchester"
           text="As an intelligent, highly productive and motivated person I believe in using problem-solving and teamwork in order to achieve goals in an organisation. 
           Having studied eleven GCSE subjects, achieving ABB for Mathematics, Physics and Chemistry respectively at Advanced Level and moving on to work at a professional
           organisation as a software developer, I think of problem-solving and forward-thinking as a habit."
@@ -36,7 +36,7 @@ const AboutPage = () => (
           dark={true}
         />
         <HorizontalSection
-          title="Take a look at some of the stuff I've worked on"
+          title="Take a Look At Some of The Stuff I've Worked On"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -48,7 +48,7 @@ const AboutPage = () => (
           dark={false}
         />
         <SectionTextLeft
-          title="I have a year of industry experience as a developer"
+          title="I Have a Year of Industry Experience As a Developer"
           text="Starting my journey at one of the Big 4 organisations, I acquired knowledge of industry standards through professionals in the Software Engineer, 
           QA and UX roles. With a solid foundation built in front-end development, I aspire to continue my career by further developing my skills with the valuable 
           resources around me."

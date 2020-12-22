@@ -17,7 +17,7 @@ const SectionTextRight = props => {
       button = styles.darkButton
     }
     var imageContainer = styles.darkImageContainer
-    var image = styles.darkImage
+    var image = styles.darkImageLeft
   } else {
     var container = styles.containerLight
     var main = styles.lightMain
@@ -31,7 +31,7 @@ const SectionTextRight = props => {
       button = styles.lightButton
     }
     var imageContainer = styles.lightImageContainer
-    var image = styles.lightImage
+    var image = styles.lightImageLeft
   }
   return (
     <>

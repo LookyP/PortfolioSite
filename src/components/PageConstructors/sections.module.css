@@ -33,12 +33,20 @@
   align-items: center;
 }
 
-.darkImage {
+.darkImageLeft {
   max-width: 100%;
   max-height: 700px;
   background-repeat: no-repeat;
   align-self: center;
   box-shadow: -45px 45px 0px 0px #feaf2a;
+}
+
+.darkImageRight {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+  box-shadow: 45px 45px 0px 0px #feaf2a;
 }
 
 .darkBodyContainer {
@@ -56,7 +64,7 @@
 
 .darkBody {
   font-family: var(--main-text-font);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   color: var(--secondary-text-color);
   margin-left: 0px;
@@ -156,12 +164,20 @@
   align-items: center;
 }
 
-.lightImage {
+.lightImageRight {
   max-width: 100%;
   max-height: 700px;
   background-repeat: no-repeat;
   align-self: center;
   box-shadow: 45px 45px 0px 0px #feaf2a;
+}
+
+.lightImageLeft {
+  max-width: 100%;
+  max-height: 700px;
+  background-repeat: no-repeat;
+  align-self: center;
+  box-shadow: -45px 45px 0px 0px #feaf2a;
 }
 
 .lightBodyContainer {
@@ -179,7 +195,7 @@
 
 .lightBody {
   font-family: var(--main-text-font);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   color: var(--primary-text-color);
   margin-left: 0px;
