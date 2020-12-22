@@ -96,9 +96,13 @@
   .containerDark {
     padding: 15vh 6vw;
   }
-  .darkImage {
+  .darkImageRight {
     max-height: 400px;
-    box-shadow: -0px 0px 0px 0px #feaf2a;
+    box-shadow: none;
+  }
+  .darkImageLeft {
+    max-height: 400px;
+    box-shadow: none;
   }
   .darkBodyContainer {
     text-align: center;
@@ -116,7 +120,7 @@
   .darkMain {
     display: grid;
     height: auto;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: auto 0.5fr;
     grid-template-columns: none;
     justify-content: center;
     align-items: center;
@@ -227,9 +231,13 @@
   .containerLight {
     padding: 15vh 6vw;
   }
-  .lightImage {
+  .lightImageRight {
     max-height: 400px;
-    box-shadow: -0px 0px 0px 0px #feaf2a;
+    box-shadow: none;
+  }
+  .lightImageLeft {
+    max-height: 400px;
+    box-shadow: none;
   }
   .lightBodyContainer {
     text-align: center;
@@ -247,7 +255,7 @@
   .lightMain {
     display: grid;
     height: auto;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: auto 0.5fr;
     grid-template-columns: none;
     justify-content: center;
     align-items: center;

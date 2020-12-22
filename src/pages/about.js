@@ -37,33 +37,27 @@ const AboutPage = () => (
         />
         <HorizontalSection
           title="Take a Look At Some of The Stuff I've Worked On"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          text="Since the beginning of my interest Software Development, I have worked on numerous projects ranging from a Twitch chatbot to this very site. 
+          The technologies in my project range from Python scripting and programming to website development using JavaScript. 
+          To find out more about my projects and how I approached the design and implementation, click the button below. "
           buttonText="TO PROJECTS"
           dark={false}
         />
         <SectionTextLeft
           title="I Have a Year of Industry Experience As a Developer"
-          text="Starting my journey at one of the Big 4 organisations, I acquired knowledge of industry standards through professionals in the Software Engineer, 
+          text="Starting my journey at one of the Big 4 accounting firms, I acquired knowledge of industry standards through professionals in the Software Engineer, 
           QA and UX roles. With a solid foundation built in front-end development, I aspire to continue my career by further developing my skills with the valuable 
           resources around me."
           image={AboutSectionTwoImage}
           useButton={false}
           dark={true}
         />
-
-        <SectionTextRight
-          title="Hi! I'm Lukman, a software developer from Greater Manchester"
-          text="As an intelligent, highly productive and motivated person I believe in using problem-solving and teamwork in order to achieve goals in an organisation. 
-          Having studied eleven GCSE subjects, achieving ABB for Mathematics, Physics and Chemistry respectively at Advanced Level and moving on to work at a professional
-          organisation as a software developer, I think of problem-solving and forward-thinking as a habit."
-          image={SectionOneImage}
-          useButton={false}
+        <HorizontalSection
+          title="I Made This Site from Scratch..."
+          text="That's right, no fancy drag-and-drop development platform, no templates, all authentic knowledge binded with inspiration from the best sources. 
+          Everything you see before your eyes has been made with love and affection using GatsbyJS, a framework built upon the ever-popular ReactJS library. 
+          To view the source code of this website, visit the GitHub repository."
+          buttonText="TO REPOSITORY"
           dark={false}
         />
       </div>

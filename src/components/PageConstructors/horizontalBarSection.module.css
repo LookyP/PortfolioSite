@@ -1,3 +1,7 @@
+.noDisplay {
+  display: none;
+}
+
 /* Dark Styles */
 .container {
   display: flex;
@@ -128,21 +132,23 @@
   }
   .title {
     font-size: 1.8rem;
+    padding: 10px;
   }
   .text {
     margin: 15px 25px;
     font-size: 1rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
   .mainBoxLight {
     padding: 15vh 6vw;
   }
   .titleLight {
     font-size: 1.8rem;
+    padding: 10px;
   }
   .textLight {
     margin: 15px 25px;
     font-size: 1rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 }

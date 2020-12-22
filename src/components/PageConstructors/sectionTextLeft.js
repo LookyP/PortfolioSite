@@ -4,34 +4,42 @@ import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./sections.module.css"
 
 const SectionTextLeft = props => {
-  if (props.dark == true) {
-    var container = styles.containerDark
-    var main = styles.darkMain
-    var bodyContainer = styles.darkBodyContainer
-    var title = styles.darkTitle
-    var body = styles.darkBody
-    var button
-    if (props.useButton == false) {
+  var container
+  var main
+  var bodyContainer
+  var title
+  var body
+  var button
+  var imageContainer
+  var image
+
+  if (props.dark === true) {
+    container = styles.containerDark
+    main = styles.darkMain
+    bodyContainer = styles.darkBodyContainer
+    title = styles.darkTitle
+    body = styles.darkBody
+
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.darkButton
     }
-    var imageContainer = styles.darkImageContainer
-    var image = styles.darkImageRight
-  } else if (props.dark == false) {
-    var container = styles.containerLight
-    var main = styles.lightMain
-    var bodyContainer = styles.lightBodyContainer
-    var title = styles.lightTitle
-    var body = styles.lightBody
-    var button
-    if (props.useButton == false) {
+    imageContainer = styles.darkImageContainer
+    image = styles.darkImageRight
+  } else if (props.dark === false) {
+    container = styles.containerLight
+    main = styles.lightMain
+    bodyContainer = styles.lightBodyContainer
+    title = styles.lightTitle
+    body = styles.lightBody
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.lightButton
     }
-    var imageContainer = styles.lightImageContainer
-    var image = styles.lightImageRight
+    imageContainer = styles.lightImageContainer
+    image = styles.lightImageRight
   }
 
   return (

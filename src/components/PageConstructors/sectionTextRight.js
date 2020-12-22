@@ -4,34 +4,41 @@ import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./sections.module.css"
 
 const SectionTextRight = props => {
+  var container
+  var main
+  var bodyContainer
+  var title
+  var body
+  var button
+  var imageContainer
+  var image
+
   if (props.dark == true) {
-    var container = styles.containerDark
-    var main = styles.darkMain
-    var bodyContainer = styles.darkBodyContainer
-    var title = styles.darkTitle
-    var body = styles.darkBody
-    var button
+    container = styles.containerDark
+    main = styles.darkMain
+    bodyContainer = styles.darkBodyContainer
+    title = styles.darkTitle
+    body = styles.darkBody
     if (props.useButton == false) {
       button = styles.noDisplay
     } else {
       button = styles.darkButton
     }
-    var imageContainer = styles.darkImageContainer
-    var image = styles.darkImageLeft
+    imageContainer = styles.darkImageContainer
+    image = styles.darkImageLeft
   } else {
-    var container = styles.containerLight
-    var main = styles.lightMain
-    var bodyContainer = styles.lightBodyContainer
-    var title = styles.lightTitle
-    var body = styles.lightBody
-    var button
+    container = styles.containerLight
+    main = styles.lightMain
+    bodyContainer = styles.lightBodyContainer
+    title = styles.lightTitle
+    body = styles.lightBody
     if (props.useButton == false) {
       button = styles.noDisplay
     } else {
       button = styles.lightButton
     }
-    var imageContainer = styles.lightImageContainer
-    var image = styles.lightImageLeft
+    imageContainer = styles.lightImageContainer
+    image = styles.lightImageLeft
   }
   return (
     <>

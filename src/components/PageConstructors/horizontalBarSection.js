@@ -4,18 +4,32 @@ import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./horizontalBarSection.module.css"
 
 const HorizontalBarSection = props => {
+  var container
+  var mainBox
+  var title
+  var text
+  var button
+
   if (props.dark === false) {
-    var container = styles.containerLight
-    var mainBox = styles.mainBoxLight
-    var title = styles.titleLight
-    var text = styles.textLight
-    var button = styles.buttonLight
+    container = styles.containerLight
+    mainBox = styles.mainBoxLight
+    title = styles.titleLight
+    text = styles.textLight
+    if (props.useButton === false) {
+      button = styles.noDisplay
+    } else {
+      button = styles.buttonLight
+    }
   } else if (props.dark === true) {
-    var container = styles.container
-    var mainBox = styles.mainBox
-    var title = styles.title
-    var text = styles.text
-    var button = styles.button
+    container = styles.container
+    mainBox = styles.mainBox
+    title = styles.title
+    text = styles.text
+    if (props.useButton === false) {
+      button = styles.noDisplay
+    } else {
+      button = styles.button
+    }
   }
 
   return (
