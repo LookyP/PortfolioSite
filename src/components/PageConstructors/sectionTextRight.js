@@ -13,13 +13,13 @@ const SectionTextRight = props => {
   var imageContainer
   var image
 
-  if (props.dark == true) {
+  if (props.dark === true) {
     container = styles.containerDark
     main = styles.darkMain
     bodyContainer = styles.darkBodyContainer
     title = styles.darkTitle
     body = styles.darkBody
-    if (props.useButton == false) {
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.darkButton
@@ -32,7 +32,7 @@ const SectionTextRight = props => {
     bodyContainer = styles.lightBodyContainer
     title = styles.lightTitle
     body = styles.lightBody
-    if (props.useButton == false) {
+    if (props.useButton === false) {
       button = styles.noDisplay
     } else {
       button = styles.lightButton
@@ -46,7 +46,7 @@ const SectionTextRight = props => {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
           <div className={main}>
             <div className={imageContainer}>
-              <img className={image} src={props.image}></img>
+              <img className={image} src={props.image} alt="Section"></img>
             </div>
 
             <div className={bodyContainer}>

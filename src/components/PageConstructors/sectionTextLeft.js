@@ -55,7 +55,7 @@ const SectionTextLeft = props => {
               </Link>
             </div>
             <div className={imageContainer}>
-              <img className={image} src={props.image}></img>
+              <img className={image} src={props.image} alt="Section"></img>
             </div>
           </div>
         </ScrollAnimation>

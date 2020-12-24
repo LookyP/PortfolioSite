@@ -12,7 +12,7 @@ const Footer = () => (
     <div className={styles.footerContainer}>
       <div className={styles.allElements}>
         <div className={styles.logoContainer}>
-          <img className={styles.logo} src={Logo} />
+          <img className={styles.logo} src={Logo} alt="Logo" />
           <span>
             <div className={styles.logoName}>LP</div>
           </span>
@@ -59,10 +59,10 @@ const Footer = () => (
             <div className={styles.followLinksTitle}>FOLLOW</div>
             <hr color="#feaf2a" className={styles.rule} />
             <div className={styles.followLinks}>
-              <img src={Facebook} className={styles.icon}></img>
-              <img src={Twitter} className={styles.icon}></img>
-              <img src={YouTube} className={styles.icon}></img>
-              <img src={LinkedIn} className={styles.icon}></img>
+              <img src={Facebook} className={styles.icon} alt="Facebook"></img>
+              <img src={Twitter} className={styles.icon} alt="Twitter"></img>
+              <img src={YouTube} className={styles.icon} alt="YouTube"></img>
+              <img src={LinkedIn} className={styles.icon} alt="LinkedIn"></img>
             </div>
           </div>
         </div>

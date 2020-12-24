@@ -7,7 +7,6 @@ import SectionTextRight from "../components/PageConstructors/sectionTextRight"
 import SectionTextLeft from "../components/PageConstructors/sectionTextLeft"
 import HorizontalSection from "../components/PageConstructors/horizontalBarSection"
 import SectionOneImage from "../images/ofme/me.jpg"
-import SectionTwoImage from "../images/landing/firstSection.jpg"
 import AboutSectionTwoImage from "../images/about/secondSection.jpg"
 
 const AboutPage = () => (

@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           <div className={styles.leftLinksContainer}>
-            <img className={styles.logo} src={Logo} />
+            <img className={styles.logo} src={Logo} alt="Logo" />
             <span>
               <div className={styles.logoName}>LP</div>
             </span>
