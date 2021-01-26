@@ -39,7 +39,9 @@ const HorizontalBarSection = props => {
           <div className={mainBox}>
             <div className={title}>{props.title}</div>
             <div className={text}>{props.text}</div>
-            <Link className={button}>{props.buttonText} &nbsp; &gt;</Link>
+            <Link to={props.buttonLink} className={button}>
+              {props.buttonText} &nbsp; &gt;
+            </Link>
           </div>
         </ScrollAnimation>
       </div>

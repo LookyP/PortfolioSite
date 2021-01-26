@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./sections.module.css"
+import Img from "gatsby-image"
 
 const SectionTextLeft = props => {
   var container

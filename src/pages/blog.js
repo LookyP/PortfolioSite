@@ -1,15 +1,15 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import styles from "./blog.module.css"
 import Layout from "../components/layout"
 import TitleArea from "../components/PageConstructors/titleArea"
 import HorizontalSection from "../components/PageConstructors/horizontalBarSection"
+import Article from "../components/article"
 
 const Blog = ({ data }) => {
-  const { edges: posts } = data.allMarkdownRemark
+  const { edges: posts } = data.posts
+  const { edges: recommended } = data.recommended
   return (
     <>
       <Layout>
@@ -28,39 +28,33 @@ const Blog = ({ data }) => {
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
                 return (
-                  <div className={styles.postTile} key={post.id}>
-                    <div className={styles.postImageContainer}>
-                      <Link to={post.frontmatter.slug}>
-                        <Img
-                          className={styles.image}
-                          fluid={
-                            post.frontmatter.featuredImage.childImageSharp.fluid
-                          }
-                        ></Img>
-                        <div className={styles.postBodyContainer}>
-                          <div className={styles.postTitle}>
-                            {post.frontmatter.title}
-                          </div>
-                          <div className={styles.postDate}>
-                            {post.frontmatter.date}
-                          </div>
-                          <p>{post.excerpt}</p>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
+                  <Article
+                    key={post.id}
+                    slug={post.frontmatter.slug}
+                    fluidImage={
+                      post.frontmatter.featuredImage.childImageSharp.fluid
+                    }
+                    title={post.frontmatter.title}
+                    date={post.frontmatter.date}
+                    excerpt={post.excerpt}
+                  />
                 )
               })}
           </div>
         </div>
-        <HorizontalSection
-          title="I Made This Site from Scratch..."
-          text="That's right, no fancy drag-and-drop development platform, no templates, all authentic knowledge binded with inspiration from the best sources. 
-          Everything you see before your eyes has been made with love and affection using GatsbyJS, a framework built upon the ever-popular ReactJS library. 
-          To view the source code of this website, visit the GitHub repository."
-          buttonText="TO REPOSITORY"
-          dark={false}
-        />
+        {recommended.map(({ node: post }) => {
+          return (
+            <HorizontalSection
+              title={"Recommended Article: " + post.frontmatter.title}
+              text={post.excerpt}
+              buttonText="READ ARTICLE"
+              buttonLink={post.frontmatter.slug}
+              // create useExternalLink prop for this for the GitHub repo link
+              dark={false}
+            />
+            /* F it, make a new recommended section component altogether just copying the sectionTextLeft code. Too diff to solve issue just for one section*/
+          )
+        })}
       </Layout>
     </>
   )
@@ -70,10 +64,34 @@ export default Blog
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    posts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 200)
+          id
+          frontmatter {
+            title
+            date(formatString: "Do MMMM, YYYY")
+            slug
+            featuredImage {
+              childImageSharp {
+                fluid(maxHeight: 500, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    recommended: allMarkdownRemark(
+      filter: { frontmatter: { recommended: { eq: "true" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
           id
           frontmatter {
             title

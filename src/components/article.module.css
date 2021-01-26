@@ -1,0 +1,63 @@
+.postTile {
+  display: block;
+}
+
+.postImageContainer {
+  position: relative;
+}
+
+.image {
+  height: 600px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.postBodyContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.postImageContainer:hover .postBodyContainer {
+  opacity: 1;
+}
+
+.postImageContainer:hover .image {
+  opacity: 0.3;
+}
+
+.postTitle {
+  font-family: "Georgia";
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.postDate {
+  font-family: var(--main-text-font);
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.postExcerpt {
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 800px) {
+  .postImageContainer .postBodyContainer {
+    opacity: 1;
+  }
+
+  .postImageContainer .image {
+    opacity: 0.5;
+  }
+}
