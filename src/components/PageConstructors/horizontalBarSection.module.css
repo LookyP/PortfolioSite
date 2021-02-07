@@ -45,7 +45,7 @@
   margin-bottom: 15px;
   padding: 20px;
   transition: all 0.3s;
-  border: 1px solid #feaf2a;
+  border: 1px solid #26a8ed;
   font-family: var(--main-header-font);
   font-size: 12px;
   color: white;
@@ -55,7 +55,7 @@
 }
 
 .button:hover {
-  background-color: #feaf2a;
+  background-color: #26a8ed;
   color: var(--primary-text-color);
   border: 1px solid transparent;
 }
@@ -102,18 +102,17 @@
   margin-top: 30px;
   padding: 20px;
   transition: all 0.3s;
-  border: 1px solid #feaf2a;
+  border: 1px solid #26a8ed;
   font-family: var(--main-header-font);
   font-size: 12px;
   color: var(--primary-text-color);
-  font-weight: bold;
   position: relative;
   border-radius: 5px;
 }
 
 .buttonLight:hover {
   background-color: black;
-  color: #feaf2a;
+  color: #26a8ed;
   border: 1px solid transparent;
 }
 

@@ -24,15 +24,14 @@
   border-radius: 0.2em;
   position: relative;
   background: white;
-  background: linear-gradient(to left, #feaf2a, white);
-  transform: skew(-10deg);
+  background: linear-gradient(to left, #26a8ed, white);
   display: inline-block;
 }
 
 .oneBody {
   font-family: var(--main-text-font);
-  font-size: 25px;
-  color: #121212;
+  font-size: 18px;
+  color: var(--main-text-colour);
 }
 
 @media only screen and (max-width: 1200px) {

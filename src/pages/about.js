@@ -17,7 +17,7 @@ const AboutPage = () => (
       </Helmet>
       <div className={styles.container}>
         <TitleArea
-          body="About Me."
+          body="ABOUT ME."
           typewriter={[
             "My knowledge",
             "My skills",

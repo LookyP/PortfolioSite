@@ -26,7 +26,7 @@ const IndexPage = () => (
         </Helmet> */}
 
         <TitleArea
-          body="Curiosity. Passion. Determination."
+          body="CURIOSITY. PASSION. DETERMINATION."
           typewriter={["Lukman Patel", "Software Developer"]}
         />
         <SectionTextRight

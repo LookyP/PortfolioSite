@@ -62,7 +62,7 @@
 .logoName {
   font-family: "Montserrat";
   font-size: 30px;
-  /* color: #feaf2a; */
+  /* color: #26a8ed; */
   color: black;
   font-weight: bold;
   text-align: center;
@@ -94,7 +94,6 @@
   font-family: var(--main-header-font);
   font-size: 14px;
   color: var(--main-text-colour);
-  font-weight: bold;
   position: relative;
   border-radius: 5px;
   background: transparent;
@@ -108,7 +107,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #feaf2a;
+  background: #26a8ed;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -126,7 +125,7 @@
   height: 2px;
   left: 0;
   position: absolute;
-  background: #feaf2a;
+  background: #26a8ed;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
 }
@@ -138,7 +137,6 @@
   font-family: var(--main-header-font);
   font-size: 25px;
   color: white;
-  font-weight: bold;
   position: relative;
   border-radius: 5px;
   background: transparent;
@@ -146,7 +144,7 @@
 
 .menuLink:hover {
   cursor: pointer;
-  color: #feaf2a;
+  color: #26a8ed;
 }
 
 @media only screen and (max-width: 1200px) {
