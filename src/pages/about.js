@@ -57,6 +57,8 @@ const AboutPage = () => (
           Everything you see before your eyes has been made with love and affection using GatsbyJS, a framework built upon the ever-popular ReactJS library. 
           To view the source code of this website, visit the GitHub repository."
           buttonText="TO REPOSITORY"
+          useExternalLink={true}
+          externalLink="https://github.com/LookyP/PortfolioSite"
           dark={false}
         />
       </div>

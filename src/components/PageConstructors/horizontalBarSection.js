@@ -9,6 +9,7 @@ const HorizontalBarSection = props => {
   var title
   var text
   var button
+  var externalButton
 
   if (props.dark === false) {
     container = styles.containerLight
@@ -17,8 +18,12 @@ const HorizontalBarSection = props => {
     text = styles.textLight
     if (props.useButton === false) {
       button = styles.noDisplay
+    } else if (props.useExternalLink === true) {
+      externalButton = styles.buttonLight
+      button = styles.noDisplay
     } else {
       button = styles.buttonLight
+      externalButton = styles.noDisplay
     }
   } else if (props.dark === true) {
     container = styles.container
@@ -27,8 +32,12 @@ const HorizontalBarSection = props => {
     text = styles.text
     if (props.useButton === false) {
       button = styles.noDisplay
+    } else if (props.useExternalLink === true) {
+      externalButton = styles.button
+      button = styles.noDisplay
     } else {
-      button = styles.button
+      button = styles.buttonLight
+      externalButton = styles.noDisplay
     }
   }
 
@@ -39,6 +48,13 @@ const HorizontalBarSection = props => {
           <div className={mainBox}>
             <div className={title}>{props.title}</div>
             <div className={text}>{props.text}</div>
+            <a
+              href={props.externalLink}
+              target="_blank"
+              className={externalButton}
+            >
+              {props.buttonText} &nbsp; &gt;
+            </a>
             <Link to={props.buttonLink} className={button}>
               {props.buttonText} &nbsp; &gt;
             </Link>
