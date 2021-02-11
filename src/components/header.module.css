@@ -74,6 +74,12 @@
   justify-content: flex-end;
 }
 
+.menuIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .leftLinksContainer {
   display: flex;
   flex-direction: row;
@@ -149,10 +155,16 @@
 
 @media only screen and (max-width: 1200px) {
   .elementsContainer {
+    margin: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .elementsContainer {
     width: 100%;
     margin: 20px 30px;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
   .rightLinksContainer {
@@ -160,11 +172,12 @@
   }
 
   .leftLinksContainer {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .menuIcon {
     display: block;
+    align-self: flex-end;
   }
 
   .mainTitle {

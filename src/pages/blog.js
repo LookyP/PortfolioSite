@@ -22,6 +22,19 @@ const Blog = ({ data }) => {
             typewriter={["Blog", "Read", "Sit Back", "Relax"]}
           />
         </div>
+        {recommended.map(({ node: post }) => {
+          return (
+            <HorizontalSection
+              title={"Recommended Article: " + post.frontmatter.title}
+              text={post.excerpt}
+              buttonText="READ ARTICLE"
+              buttonLink={post.frontmatter.slug}
+              // create useExternalLink prop for this for the GitHub repo link
+              dark={true}
+            />
+            /* F it, make a new recommended section component altogether just copying the sectionTextLeft code. Too diff to solve issue just for one section*/
+          )
+        })}
         <div className={styles.postSectionContainer}>
           <div className={styles.postContainer}>
             {posts
@@ -42,19 +55,6 @@ const Blog = ({ data }) => {
               })}
           </div>
         </div>
-        {recommended.map(({ node: post }) => {
-          return (
-            <HorizontalSection
-              title={"Recommended Article: " + post.frontmatter.title}
-              text={post.excerpt}
-              buttonText="READ ARTICLE"
-              buttonLink={post.frontmatter.slug}
-              // create useExternalLink prop for this for the GitHub repo link
-              dark={false}
-            />
-            /* F it, make a new recommended section component altogether just copying the sectionTextLeft code. Too diff to solve issue just for one section*/
-          )
-        })}
       </Layout>
     </>
   )

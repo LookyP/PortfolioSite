@@ -1,9 +1,16 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-
 <h1 align="center">
-  Portfolio site
+  📘 Personal Portfolio/Blog Website 📘 
 </h1>
-
 ## 🚀 About
 
-This is a portfolio site that contains my skills, experience and knowledge.
+I made this site because I love web development.
+
+## 💻 Technologies
+
+- ReactJS
+- GatsbyJS
+- JavaScript
+- HTML
+- CSS
+- Netlify CI/CD
+- Netlify Hosting

@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20vh 6vw;
+  padding: 15vh 6vw;
   z-index: 5;
 }
 
@@ -117,8 +117,14 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 2.2rem;
+  }
   .text {
     margin: 15px 100px;
+  }
+  .titleLight {
+    font-size: 2.2rem;
   }
   .textLight {
     margin: 15px 100px;
@@ -127,11 +133,12 @@
 
 @media only screen and (max-width: 800px) {
   .mainBox {
-    padding: 15vh 6vw;
+    padding: 10vh 6vw;
   }
   .title {
     font-size: 1.8rem;
     padding: 10px;
+    margin: 15px 15px;
   }
   .text {
     margin: 15px 25px;
@@ -139,15 +146,57 @@
     padding: 10px 0px;
   }
   .mainBoxLight {
-    padding: 15vh 6vw;
+    padding: 10vh 6vw;
   }
   .titleLight {
     font-size: 1.8rem;
     padding: 10px;
+    margin: 15px 15px;
   }
   .textLight {
     margin: 15px 25px;
     font-size: 1rem;
     padding: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .mainBox {
+    padding: 10vh 6vw;
+  }
+  .title {
+    font-size: 1.4rem;
+    padding: 10px;
+    margin: 15px 15px;
+    margin-bottom: 10px;
+  }
+  .text {
+    margin: 5px 5px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    padding: 10px 0px;
+  }
+  .button {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .mainBoxLight {
+    padding: 10vh 6vw;
+  }
+  .titleLight {
+    font-size: 1.4rem;
+    padding: 10px;
+    margin: 15px 15px;
+    margin-bottom: 10px;
+  }
+  .textLight {
+    margin: 5px 5px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    padding: 10px 0px;
+  }
+  .buttonLight {
+    font-size: 10px;
+    margin-top: 15px;
   }
 }

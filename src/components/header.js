@@ -38,12 +38,6 @@ const Header = () => {
       </div>
       <div id="header" className={styles.headerContainer}>
         <div className={styles.elementsContainer}>
-          <div className={styles.menuIcon} onClick={handleMenuButtonClick}>
-            <div className={styles.menuIconLine}></div>
-            <div className={styles.menuIconLine}></div>
-            <div className={styles.menuIconLine}></div>
-          </div>
-
           <div className={styles.leftLinksContainer}>
             <img className={styles.logo} src={Logo} alt="Logo" />
             <span>
@@ -83,6 +77,13 @@ const Header = () => {
             >
               PROJECTS
             </Link>
+          </div>
+          <div className={styles.menuIconContainer}>
+            <div className={styles.menuIcon} onClick={handleMenuButtonClick}>
+              <div className={styles.menuIconLine}></div>
+              <div className={styles.menuIconLine}></div>
+              <div className={styles.menuIconLine}></div>
+            </div>
           </div>
         </div>
       </div>

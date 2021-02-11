@@ -36,7 +36,7 @@ const HorizontalBarSection = props => {
       externalButton = styles.button
       button = styles.noDisplay
     } else {
-      button = styles.buttonLight
+      button = styles.button
       externalButton = styles.noDisplay
     }
   }

@@ -5,7 +5,7 @@
 /* DARK STUFF */
 .containerDark {
   width: 100%;
-  padding: 20vh 6vw;
+  padding: 15vh 6vw;
   background: linear-gradient(19deg, #434343 0%, #000000 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -91,6 +91,20 @@
   border: 1px solid transparent;
 }
 
+@media only screen and (max-width: 1200px) {
+  .darkMain {
+    gap: 50px;
+  }
+  .darkTitle {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .darkBody {
+    margin: 5px 5px;
+    padding: 10px 0px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .containerDark {
     padding: 15vh 6vw;
@@ -136,10 +150,34 @@
   }
 }
 
+@media only screen and (max-width: 430px) {
+  .containerDark {
+    padding: 10vh 6vw;
+  }
+  .darkMain {
+    margin: 0px 25px;
+  }
+  .darkTitle {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .darkBody {
+    margin: 5px 5px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    padding: 10px 0px;
+  }
+  .darkButton {
+    align-self: center;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+}
+
 /* LIGHT STUFF */
 .containerLight {
   width: 100%;
-  padding: 20vh 6vw;
+  padding: 15vh 6vw;
   background: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,6 +263,20 @@
   border: 1px solid transparent;
 }
 
+@media only screen and (max-width: 1200px) {
+  .lightMain {
+    gap: 50px;
+  }
+  .lightTitle {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .lightBody {
+    margin: 5px 5px;
+    padding: 10px 0px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .containerLight {
     padding: 15vh 6vw;
@@ -267,5 +319,29 @@
   }
   .lightBody {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .containerLight {
+    padding: 10vh 6vw;
+  }
+  .lightMain {
+    margin: 0px 25px;
+  }
+  .lightTitle {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .lightBody {
+    margin: 5px 5px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    padding: 10px 0px;
+  }
+  .lightButton {
+    align-self: center;
+    font-size: 10px;
+    margin-top: 15px;
   }
 }
