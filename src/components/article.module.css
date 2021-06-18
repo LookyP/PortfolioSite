@@ -28,7 +28,7 @@
 }
 
 .postImageContainer:hover .image {
-  filter: brightness(70%);
+  filter: brightness(50%);
   transform: scale(1.1);
 }
 

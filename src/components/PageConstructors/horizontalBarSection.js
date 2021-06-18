@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./horizontalBarSection.module.css"
+import Img from "gatsby-image"
 
 const HorizontalBarSection = props => {
   var container
@@ -47,6 +48,13 @@ const HorizontalBarSection = props => {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
           <div className={mainBox}>
             <div className={title}>{props.title}</div>
+            <div className={styles.imageContainer}>
+              <Img
+                className={styles.image}
+                // imgStyle={{ position: "relative" }}
+                fluid={props.fluidImage}
+              ></Img>
+            </div>
             <div className={text}>{props.text}</div>
             <a
               href={props.externalLink}

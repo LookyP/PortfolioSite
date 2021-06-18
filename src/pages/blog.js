@@ -29,6 +29,7 @@ const Blog = ({ data }) => {
               text={post.excerpt}
               buttonText="READ ARTICLE"
               buttonLink={post.frontmatter.slug}
+              fluidImage={post.frontmatter.featuredImage.childImageSharp.fluid}
               // create useExternalLink prop for this for the GitHub repo link
               dark={true}
             />
@@ -77,7 +78,7 @@ export const pageQuery = graphql`
             slug
             featuredImage {
               childImageSharp {
-                fluid(maxHeight: 500, quality: 100) {
+                fluid(maxHeight: 500, maxWidth: 500, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
