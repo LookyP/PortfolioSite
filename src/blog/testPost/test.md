@@ -2,6 +2,7 @@
 slug: "/blog/my-first-post"
 date: "2020-05-04"
 title: "My first blog post"
+description: "That's right, no fancy drag-and-drop development platform, no templates, all authentic knowledge binded with inspiration from the best sources."
 featuredImage: "./images/secondSection.jpg"
 tags: ["Hello", "Test"]
 recommended: "false"

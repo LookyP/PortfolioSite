@@ -49,11 +49,7 @@ const HorizontalBarSection = props => {
           <div className={mainBox}>
             <div className={title}>{props.title}</div>
             <div className={styles.imageContainer}>
-              <Img
-                className={styles.image}
-                // imgStyle={{ position: "relative" }}
-                fluid={props.fluidImage}
-              ></Img>
+              <Img className={styles.image} fluid={props.fluidImage}></Img>
             </div>
             <div className={text}>{props.text}</div>
             <a

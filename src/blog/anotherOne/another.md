@@ -2,6 +2,7 @@
 slug: "/blog/my-first-post"
 date: "2019-05-04"
 title: "Another One"
+description: "That's right, no fancy drag-and-drop development platform, no templates, all authentic knowledge binded with inspiration from the best sources."
 featuredImage: "./images/firstSection.jpg"
 tags: ["Hello", "Test"]
 recommended: "false"
