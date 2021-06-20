@@ -66,6 +66,7 @@ const Header = () => {
               to="/blog"
               activeClassName={styles.activeLink}
               className={styles.link}
+              partiallyActive={true}
             >
               BLOG
             </Link>

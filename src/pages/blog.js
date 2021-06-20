@@ -28,7 +28,7 @@ const Blog = ({ data }) => {
               title={"Recommended Article: " + post.frontmatter.title}
               text={post.excerpt}
               buttonText="READ ARTICLE"
-              buttonLink={post.frontmatter.slug}
+              buttonLink={post.fields.slug}
               fluidImage={post.frontmatter.featuredImage.childImageSharp.fluid}
               // create useExternalLink prop for this for the GitHub repo link
               dark={true}
@@ -44,7 +44,7 @@ const Blog = ({ data }) => {
                 return (
                   <Article
                     key={post.id}
-                    slug={post.frontmatter.slug}
+                    slug={post.fields.slug}
                     fluidImage={
                       post.frontmatter.featuredImage.childImageSharp.fluid
                     }
@@ -70,6 +70,9 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           excerpt(pruneLength: 200)
           id
           frontmatter {
@@ -92,6 +95,9 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           excerpt(pruneLength: 400)
           id
           frontmatter {

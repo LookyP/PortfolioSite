@@ -34,6 +34,7 @@
 .postInfo {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin: 100px 300px 100px 0px;
 }
 
@@ -67,6 +68,35 @@
   font-family: var(--main-text-font);
   font-size: 20px;
   line-height: 40px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+}
+
+.tagLink {
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  background-color: rgba(38, 168, 237, 0.5);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all 0.3s;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.tagLink:hover {
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 800px) {
