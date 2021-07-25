@@ -7,10 +7,39 @@
 .postSectionContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   z-index: 5;
   background: white;
   padding: 15vh 6vw;
+}
+
+.sectionBar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-family: "Georgia";
+  font-size: 46px;
+}
+
+.searchInput {
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  padding: 10px;
+  margin-left: auto;
+  transition: all 0.2s;
+}
+
+.searchInput:hover {
+  transform: scale(1.1);
+}
+
+.searchInput:focus {
+  transform: scale(1.1);
 }
 
 .postTile {
@@ -20,7 +49,7 @@
 .postContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
   margin: 20px 50px;
 }
@@ -41,14 +70,6 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
-}
-
-.postImageContainer:hover .postBodyContainer {
-  opacity: 1;
-}
-
-.postImageContainer:hover .image {
-  opacity: 0.3;
 }
 
 .postTitle {

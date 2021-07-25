@@ -11,7 +11,6 @@ const article = props => (
         <div className={styles.postBodyContainer}>
           <div className={styles.postTitle}>{props.title}</div>
           <div className={styles.postDate}>{props.date}</div>
-          <div className={styles.postExcerpt}>{props.excerpt}</div>
         </div>
       </Link>
     </div>
