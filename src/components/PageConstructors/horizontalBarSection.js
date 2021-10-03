@@ -11,6 +11,7 @@ const HorizontalBarSection = props => {
   var text
   var button
   var externalButton
+  var animation
 
   if (props.dark === false) {
     container = styles.containerLight
@@ -41,11 +42,16 @@ const HorizontalBarSection = props => {
       externalButton = styles.noDisplay
     }
   }
+  if (props.animation === true) {
+    animation = "fadeIn"
+  } else {
+    animation = "none"
+  }
 
   return (
     <>
       <div className={container}>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={200}>
           <div className={mainBox}>
             <div className={title}>{props.title}</div>
             <div className={styles.imageContainer}>
@@ -57,10 +63,10 @@ const HorizontalBarSection = props => {
               target="_blank"
               className={externalButton}
             >
-              {props.buttonText} &nbsp; &gt;
+              {props.buttonText}
             </a>
             <Link to={props.buttonLink} className={button}>
-              {props.buttonText} &nbsp; &gt;
+              {props.buttonText}
             </Link>
           </div>
         </ScrollAnimation>

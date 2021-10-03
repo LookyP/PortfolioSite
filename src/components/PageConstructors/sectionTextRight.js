@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import styles from "./sections.module.css"
+import Img from "gatsby-image"
 
 const SectionTextRight = props => {
   var container
@@ -24,7 +25,7 @@ const SectionTextRight = props => {
     } else {
       button = styles.darkButton
     }
-    imageContainer = styles.darkImageContainer
+    imageContainer = styles.darkImageContainerRight
     image = styles.darkImageLeft
   } else {
     container = styles.containerLight
@@ -37,7 +38,7 @@ const SectionTextRight = props => {
     } else {
       button = styles.lightButton
     }
-    imageContainer = styles.lightImageContainer
+    imageContainer = styles.lightImageContainerRight
     image = styles.lightImageLeft
   }
   return (
@@ -46,7 +47,7 @@ const SectionTextRight = props => {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
           <div className={main}>
             <div className={imageContainer}>
-              <img className={image} src={props.image} alt="Section"></img>
+              <Img className={image} fluid={props.fluidImage}></Img>
             </div>
 
             <div className={bodyContainer}>

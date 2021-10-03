@@ -54,17 +54,26 @@ const Blog = ({ data }) => {
           <title>LP - Blog</title>
         </Helmet>
         <div className={styles.container}>
-          <TitleArea
+          {/* <TitleArea
             body="Welcome to My Blog."
             typewriter={["Blog", "Read", "Sit Back", "Relax"]}
-          />
+          /> */}
+          <div className={styles.topSectionContainer}>
+            <HorizontalSection
+              title={"Kick Back and Relax"}
+              text={"Lorem Ipsum Dolor Sit Amet"}
+              useButton={false}
+              // create useExternalLink prop for this for the GitHub repo link
+              dark={false}
+            />
+          </div>
         </div>
         {recommended.map(({ node: post }) => {
           return (
             <HorizontalSection
               title={"Recommended Article: " + post.frontmatter.title}
               text={post.excerpt}
-              buttonText="READ ARTICLE"
+              buttonText="READ ARTICLE &nbsp; &gt;"
               buttonLink={post.fields.slug}
               fluidImage={post.frontmatter.featuredImage.childImageSharp.fluid}
               // create useExternalLink prop for this for the GitHub repo link

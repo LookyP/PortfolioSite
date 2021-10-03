@@ -26,7 +26,7 @@ const SectionTextLeft = props => {
     } else {
       button = styles.darkButton
     }
-    imageContainer = styles.darkImageContainer
+    imageContainer = styles.darkImageContainerLeft
     image = styles.darkImageRight
   } else if (props.dark === false) {
     container = styles.containerLight
@@ -39,7 +39,7 @@ const SectionTextLeft = props => {
     } else {
       button = styles.lightButton
     }
-    imageContainer = styles.lightImageContainer
+    imageContainer = styles.lightImageContainerLeft
     image = styles.lightImageRight
   }
 
@@ -56,7 +56,7 @@ const SectionTextLeft = props => {
               </Link>
             </div>
             <div className={imageContainer}>
-              <img className={image} src={props.image} alt="Section"></img>
+              <Img className={image} fluid={props.fluidImage}></Img>
             </div>
           </div>
         </ScrollAnimation>

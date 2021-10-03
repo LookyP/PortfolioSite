@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.topSectionContainer {
+  margin-top: 98px;
+}
+
 .postSectionContainer {
   display: flex;
   justify-content: center;

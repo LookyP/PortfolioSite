@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .darkMain {
@@ -27,27 +28,36 @@
   margin: 0 50px;
 }
 
-.darkImageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.darkImageLeft {
-  max-width: 100%;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  align-self: center;
+.darkImageContainerRight {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   box-shadow: -45px 45px 0px 0px #26a8ed;
 }
 
-.darkImageRight {
-  max-width: 100%;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  align-self: center;
+.darkImageContainerLeft {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   box-shadow: 45px 45px 0px 0px #26a8ed;
+}
+
+.darkImageLeft {
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.darkImageRight {
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .darkBodyContainer {
@@ -110,17 +120,13 @@
   .containerDark {
     padding: 15vh 6vw;
   }
-  .darkImageRight {
+  .darkImageContainerRight {
     max-height: 400px;
     box-shadow: none;
   }
-  .darkImageLeft {
+  .darkImageContainerLeft {
     max-height: 400px;
     box-shadow: none;
-  }
-  .darkBodyContainer {
-    text-align: center;
-    margin-bottom: 30px;
   }
   .darkTitle {
     font-size: 1.8rem;
@@ -140,11 +146,11 @@
     align-items: center;
   }
   .darkBodyContainer {
-    grid-row-start: 2;
-    text-align: center;
     margin-top: 30px;
     grid-row-start: 2;
     font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
   }
   .darkBody {
     font-size: 1rem;
@@ -187,6 +193,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .lightMain {
@@ -199,27 +206,36 @@
   margin: 0 50px;
 }
 
-.lightImageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.lightImageContainerRight {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: -45px 45px 0px 0px #26a8ed;
 }
 
-.lightImageRight {
-  max-width: 100%;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  align-self: center;
+.lightImageContainerLeft {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   box-shadow: 45px 45px 0px 0px #26a8ed;
 }
 
+.lightImageRight {
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
 .lightImageLeft {
-  max-width: 100%;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  align-self: center;
-  box-shadow: -45px 45px 0px 0px #26a8ed;
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .lightBodyContainer {
@@ -282,26 +298,21 @@
   .containerLight {
     padding: 15vh 6vw;
   }
-  .lightImageRight {
+  .lightImageContainerRight {
     max-height: 400px;
     box-shadow: none;
+    grid-row-start: 1;
   }
-  .lightImageLeft {
+  .lightImageContainerLeft {
     max-height: 400px;
     box-shadow: none;
-  }
-  .lightBodyContainer {
-    text-align: center;
-    margin-bottom: 30px;
+    grid-row-start: 1;
   }
   .lightTitle {
     font-size: 1.8rem;
   }
   .lightButton {
     align-self: center;
-  }
-  .lightImageContainer {
-    grid-row-start: 1;
   }
   .lightMain {
     display: grid;
@@ -315,8 +326,8 @@
     grid-row-start: 2;
     text-align: center;
     margin-top: 30px;
-    grid-row-start: 2;
     font-size: 1rem;
+    margin-bottom: 30px;
   }
   .lightBody {
     font-size: 1rem;
