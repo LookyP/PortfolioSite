@@ -55,7 +55,7 @@
   margin-top: 40px;
   font-family: var(--main-text-font);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 32px;
   color: white;
 }
 
@@ -78,6 +78,7 @@
   bottom: 0;
   left: 0;
   margin-bottom: 20px;
+  z-index: 10;
 }
 
 .tagLink {
@@ -142,11 +143,15 @@
   .imageContainer {
     margin: 100px 50px 50px 50px;
   }
+  .contentContainer {
+    margin: 80px 50px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .contentContainer {
-    margin: 80px 50px;
+  .content {
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 
@@ -174,10 +179,20 @@
 
   .overview {
     font-size: 14px;
+    line-height: 28px;
   }
 
   .profileName {
     font-size: 14px;
+  }
+
+  .tagLink {
+    font-size: 14px;
+  }
+
+  .content {
+    font-size: 14px;
+    line-height: 28px;
   }
 }
 

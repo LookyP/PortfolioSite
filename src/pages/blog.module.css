@@ -91,7 +91,7 @@
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   .postImageContainer .postBodyContainer {
     opacity: 1;
   }
@@ -103,6 +103,32 @@
 
   .postImageContainer .image {
     opacity: 0.5;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionBar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchInput {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .searchInput {
+    font-size: 14px;
   }
 }
 
