@@ -11,8 +11,6 @@ const Background = () => (
     <li></li>
     <li></li>
     <li></li>
-    <li></li>
-    <li></li>
   </ul>
 )
 

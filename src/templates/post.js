@@ -4,6 +4,7 @@ import { kebabCase } from "lodash"
 import Img from "gatsby-image"
 import styles from "./post.module.css"
 import Layout from "../components/layout"
+import Me from "../images/ofme/me.jpg"
 
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -29,9 +30,15 @@ export default function Template({ data }) {
             <div className={styles.date}>{frontmatter.date}</div>
             <div className={styles.title}>{frontmatter.title}</div>
             <div className={styles.overview}>{frontmatter.description}</div>
-            <div className={styles.tagsContainer}>{postTagLinks}</div>
+            <div className={styles.profile}>
+              <div><img  className={styles.profileImage} src={Me}/></div>
+              
+              <div className={styles.profileName}>Lukman Patel</div>
+            </div>
           </div>
         </div>
+
+        <div className={styles.tagsContainer}>{postTagLinks}</div>
         <div className={styles.contentContainer}>
           <div
             className={styles.content}

@@ -172,4 +172,7 @@
     padding: 20px 10px;
     font-size: 10px;
   }
+  .icon {
+    padding: 0px 10px;
+  }
 }

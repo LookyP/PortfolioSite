@@ -46,7 +46,7 @@ const SectionTextLeft = props => {
   return (
     <>
       <div className={container}>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={200}>
           <div className={main}>
             <div className={bodyContainer}>
               <div className={title}>{props.title}</div>

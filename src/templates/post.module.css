@@ -13,6 +13,7 @@
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
   width: 100%;
+  gap: 100px;
 }
 
 .imageContainer {
@@ -34,7 +35,6 @@
 .postInfo {
   display: flex;
   flex-direction: column;
-  position: relative;
   margin: 100px 300px 100px 0px;
 }
 
@@ -66,16 +66,15 @@
 
 .content {
   font-family: var(--main-text-font);
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 .tagsContainer {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  align-self: flex-end;
-  position: absolute;
+  align-self: center;
   bottom: 0;
   left: 0;
   margin-bottom: 20px;
@@ -84,19 +83,71 @@
 .tagLink {
   font-family: var(--main-text-font);
   font-size: 16px;
-  color: white;
+  color: black;
   padding: 10px 20px;
-  background-color: rgba(38, 168, 237, 0.5);
   text-decoration: none;
   margin-right: 10px;
   transition: all 0.3s;
-  border: 1px solid white;
+  border: 1px solid #26a8ed;
   border-radius: 20px;
 }
 
 .tagLink:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: #26a8ed;
+  border: 1px solid black;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.profileImage {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profileName {
+  display: flex;
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  color: white;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  .postInfo {
+    margin: 100px 150px 100px 0px;
+  }
+  .imageContainer {
+    margin: 100px 0px 100px 150px;
+  }
+  .contentContainer {
+    margin: 80px 150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .postInfoContainer {
+    grid-template-columns: none;
+    gap: 0px;
+  }
+  .postInfo {
+    margin: 0px 50px 100px 50px;
+  }
+  .imageContainer {
+    margin: 100px 50px 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentContainer {
+    margin: 80px 50px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -111,6 +162,22 @@
 
   .postImageContainer .image {
     opacity: 0.5;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .overview {
+    font-size: 14px;
+  }
+
+  .profileName {
+    font-size: 14px;
   }
 }
 

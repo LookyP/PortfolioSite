@@ -44,7 +44,7 @@ const SectionTextRight = props => {
   return (
     <>
       <div className={container}>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={200}>
           <div className={main}>
             <div className={imageContainer}>
               <Img className={image} fluid={props.fluidImage}></Img>

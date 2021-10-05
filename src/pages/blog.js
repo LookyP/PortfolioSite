@@ -1,9 +1,8 @@
 import React, { useState } from "react"
 import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styles from "./blog.module.css"
 import Layout from "../components/layout"
-import TitleArea from "../components/PageConstructors/titleArea"
 import HorizontalSection from "../components/PageConstructors/horizontalBarSection"
 import Article from "../components/article"
 
@@ -166,7 +165,7 @@ export const pageQuery = graphql`
             slug
             featuredImage {
               childImageSharp {
-                fluid(maxHeight: 500, quality: 100) {
+                fluid(maxHeight: 500, maxWidth: 500, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
